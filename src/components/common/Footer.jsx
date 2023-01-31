@@ -169,10 +169,7 @@ function Footer() {
                   </div>
                   <div className="phone">
                     <a rel="noopener noreferrer" href="tel:05661111985">
-                      +880 566 1111 985
-                    </a>
-                    <a rel="noopener noreferrer" href="tel:06571111576">
-                      +880 657 1111 576
+                      +92 423 231 3408
                     </a>
                   </div>
                 </div>
@@ -203,14 +200,7 @@ function Footer() {
               <div className="col-12 col-md-4 col-lg-4 col-xl-5">
                 <div className="copy-txt">
                   <span>
-                    Copyright 2022 <b>Finibus</b> | Design By{" "}
-                    <a
-                      rel="noopener noreferrer"
-                      href="https://www.egenslab.com/"
-                      target="_blank"
-                    >
-                      Egens Lab
-                    </a>
+                    Copyright 2023 <b>Techinoid</b>
                   </span>
                 </div>
               </div>

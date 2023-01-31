@@ -30,8 +30,8 @@ function ContactUsArea() {
                 <i className="bi bi-telephone" />
               </div>
               <h4>Phone</h4>
-              <a href="tel:0123456789102">+012-3456-789102</a>
-              <a href="tel:013456789102">+012-3456-789102</a>
+              <a href="tel:+923314478658">+92 331 447 8658</a>
+              <a href="tel:+924232313408">+92 423 231 3408</a>
             </div>
           </div>
           <div className="col-md-6 col-lg-4 col-xl-4">
