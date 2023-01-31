@@ -46,16 +46,6 @@ function Footer() {
                       <i className="fab fa-twitter" />
                     </a>
                   </li>
-
-                  <li>
-                    <a
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      href="https://www.pinterest.com/"
-                    >
-                      <i className="fab fa-pinterest-p" />
-                    </a>
-                  </li>
                   <li>
                     <a
                       rel="noopener noreferrer"
