@@ -20,7 +20,7 @@ function ContactUsArea() {
               </div>
               <h4>Location</h4>
               <p>
-                168/170, Ave 01,Old York Drive Rich Mirpur, Dhaka, Bangladesh
+                Office 1215,1216 Al-Hafeez Heights Block D1 Gulberg III Lahore, Pakistan
               </p>
             </div>
           </div>

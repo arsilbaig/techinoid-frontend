@@ -25,7 +25,7 @@ function Footer() {
                 </div>
                 <address>
                   <h4>Office</h4>
-                  <p>168/170, Avenue 01, Mirpur DOHS, Bangladesh</p>
+                  <p>Office 1215,1216 Al-Hafeez Heights Block D1 Gulberg III Lahore, Pakistan</p>
                 </address>
                 <ul className="social-media-icons">
                   <li>
@@ -203,7 +203,7 @@ function Footer() {
                   <div className="address-icon">
                     <i className="fas fa-map-marker-alt" />
                   </div>
-                  <p>168/170, Avenue 01, Mirpur DOHS, Bangladesh</p>
+                  <p>Office 1215,1216 Al-Hafeez Heights Block D1 Gulberg III Lahore, Pakistan</p>
                 </div>
               </div>
             </div>
