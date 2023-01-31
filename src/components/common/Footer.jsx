@@ -181,8 +181,8 @@ function Footer() {
                     <i className="far fa-envelope" />
                   </div>
                   <div className="email">
-                    <a rel="noopener noreferrer" href="mailto:info@example.com">
-                      info@example.com
+                    <a rel="noopener noreferrer" href="mailto:info@techinoid.com">
+                      info@techinoid.com
                     </a>
                     <a rel="noopener noreferrer" href="mailto:info@support.com">
                       info@support.com

@@ -40,8 +40,8 @@ function ContactUsArea() {
                 <i className="bi bi-envelope" />
               </div>
               <h4>Email</h4>
-              <a href="mailto:info@example.com">info@example.com</a>
-              <a href="mailto:support@example.com">support@example.com</a>
+              <a href="mailto:info@techinoid.com">info@techinoid.com</a>
+              <a href="mailto:support@techinoid.com">support@techinoid.com</a>
             </div>
           </div>
         </div>
