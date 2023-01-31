@@ -42,8 +42,7 @@ function Root() {
             path={`${process.env.PUBLIC_URL}/commingsoon`}
             component={CommingSoonPage}
           />
-          <Route exact path="/" component={MainLayout} />
-          <Route exact path="/home2" component={SecoundLayout} />
+          <Route exact path="/" component={SecoundLayout} />
           <Layout>
             <Route
               exact

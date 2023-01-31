@@ -1,24 +1,24 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState,useReducer } from "react";
+import React, { useEffect, useState, useReducer } from "react";
 import { Link } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
 import { NavLink } from "react-router-dom";
 
 /*---------Using reducer mange the active or inactive menu----------*/
-const initialState = {activeMenu:''};
+const initialState = { activeMenu: '' };
 
 function reducer(state, action) {
   switch (action.type) {
     case 'homeOne':
-      return {activeMenu: 'homeOne'};
+      return { activeMenu: 'homeOne' };
     case 'service':
-      return {activeMenu: 'service'};
+      return { activeMenu: 'service' };
     case 'projects':
-      return {activeMenu: 'projects'};
+      return { activeMenu: 'projects' };
     case 'blogs':
-      return {activeMenu: 'blogs'};
+      return { activeMenu: 'blogs' };
     default:
-      return {activeMenu: ''};
+      return { activeMenu: '' };
   }
 }
 
@@ -42,7 +42,7 @@ function Header() {
       : header.classList.remove("sticky");
   };
 
- /*----for single sidebar event use one state-------*/
+  /*----for single sidebar event use one state-------*/
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => {
     if (sidebar === false || sidebar === 0) {
@@ -108,169 +108,57 @@ function Header() {
                   </Link>
                 </div>
                 <ul>
-                  <li className="has-child active" onClick={() => dispatch({type: 'homeOne'})}>
-                    <Link to={"#"} className={state.activeMenu ==='homeOne'?'active':''}>Home</Link>
-                    <i className="bi bi-chevron-down" />
-                    <ul
-                      className={
-                        state.activeMenu ==='homeOne'
-                          ? "sub-menu d-block"
-                          : "sub-menu d-none"
-                      }
+                  <li>
+                    <NavLink
+                      onClick={scrollTop}
+                      to={`${process.env.PUBLIC_URL}/`}
                     >
-                      <li>
-                        <Link onClick={scrollTop} to={"/"} className={state.activeMenu ==='homeOne'?'active':''}>
-                          Home 01
-                        </Link>
-                      </li>
-                      <li>
-                        <NavLink
-                          onClick={scrollTop}
-                          to={`${process.env.PUBLIC_URL}/home2`}
-                        >
-                          Home 02
-                        </NavLink>
-                      </li>
-                    </ul>
+                      {'home'}
+                    </NavLink>
                   </li>
+
                   <li>
                     <NavLink
                       onClick={scrollTop}
                       to={`${process.env.PUBLIC_URL}/about`}
                     >
-                      About us
+                      {'about'}
                     </NavLink>
                   </li>
-                  <li className="has-child" onClick={() => dispatch({type: 'service'})}>
-                    <Link onClick={scrollTop} to={"#"}>
-                      Services
-                    </Link>
-                    <i className="bi bi-chevron-down" />
-                    <ul
-                      className={
-                        state.activeMenu ==='service'
-                          ? "sub-menu d-block"
-                          : "sub-menu d-none"
-                      }
+
+                  <li>
+                    <NavLink
+                      onClick={scrollTop}
+                      to={`${process.env.PUBLIC_URL}/service`}
                     >
-                      <li>
-                        <NavLink
-                          onClick={scrollTop}
-                          to={`${process.env.PUBLIC_URL}/service`}
-                        >
-                          Service
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          onClick={scrollTop}
-                          to={`${process.env.PUBLIC_URL}/service-details`}
-                        >
-                          Service Details
-                        </NavLink>
-                      </li>
-                    </ul>
+                      {'services'}
+                    </NavLink>
                   </li>
-                  <li className="has-child" onClick={() => dispatch({type: 'projects'})}>
-                    <Link onClick={scrollTop} to={"#"}>
-                      Projects
-                    </Link>
-                    <i className="bi bi-chevron-down" />
-                    <ul
-                      className={
-                        state.activeMenu ==='projects'
-                          ? "sub-menu d-block"
-                          : "sub-menu d-none"
-                      }
+
+                  <li>
+                    <NavLink
+                      onClick={scrollTop}
+                      to={`${process.env.PUBLIC_URL}/project`}
                     >
-                      <li>
-                        <NavLink
-                          onClick={scrollTop}
-                          to={`${process.env.PUBLIC_URL}/project`}
-                        >
-                          Project
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          onClick={scrollTop}
-                          to={`${process.env.PUBLIC_URL}/project-details`}
-                        >
-                          Project Details
-                        </NavLink>
-                      </li>
-                    </ul>
+                      {'project'}
+                    </NavLink>
                   </li>
-                  <li className="has-child" onClick={() => dispatch({type: 'blogs'})}>
-                    <Link to={"#"}>Blogs</Link>
-                    <i className="bi bi-chevron-down" />
-                    <ul
-                      className={
-                        state.activeMenu ==='blogs'
-                          ? "sub-menu d-block"
-                          : "sub-menu d-none"
-                      }
+
+                  <li>
+                    <NavLink
+                      onClick={scrollTop}
+                      to={`${process.env.PUBLIC_URL}/blog`}
                     >
-                      <li>
-                        <NavLink
-                          onClick={scrollTop}
-                          to={`${process.env.PUBLIC_URL}/blog`}
-                        >
-                          Blog
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          onClick={scrollTop}
-                          to={`${process.env.PUBLIC_URL}/blog-standard`}
-                        >
-                          Blog standard
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          onClick={scrollTop}
-                          to={`${process.env.PUBLIC_URL}/blog-details`}
-                        >
-                          Blog Details
-                        </NavLink>
-                      </li>
-                    </ul>
+                      {'blogs'}
+                    </NavLink>
                   </li>
-                  <li className="has-child" onClick={() => dispatch({type: 'pages'})}>
-                    <Link to={"#"}>Pages</Link>
-                    <i className="bi bi-chevron-down" />
-                    <ul
-                      className={
-                        state.activeMenu ==='pages'
-                          ? "sub-menu d-block"
-                          : "sub-menu d-none"
-                      }
-                    >
-                      <li>
-                        <NavLink
-                          onClick={scrollTop}
-                          to={`${process.env.PUBLIC_URL}/commingsoon`}
-                        >
-                          Comming soon
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          onClick={scrollTop}
-                          to={`${process.env.PUBLIC_URL}/error`}
-                        >
-                          Error 404
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li>
+
                   <li>
                     <NavLink
                       onClick={scrollTop}
                       to={`${process.env.PUBLIC_URL}/contact`}
                     >
-                      Contact us
+                      {'contactUs'}
                     </NavLink>
                   </li>
                 </ul>
@@ -280,7 +168,8 @@ function Header() {
                       onClick={scrollTop}
                       to={`${process.env.PUBLIC_URL}/contact`}
                     >
-                      Get a quote
+                      {'getAquote'}
+
                     </Link>
                   </div>
                 </div>
