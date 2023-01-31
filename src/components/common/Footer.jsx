@@ -167,14 +167,6 @@ function Footer() {
                       Career
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      onClick={scrollTop}
-                      to={`${process.env.PUBLIC_URL}/service`}
-                    >
-                      Pricing Plan
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </div>
