@@ -44,10 +44,9 @@ function WhatWeDoArea() {
                       </i>
                     </div>
                     <div className="service-content">
-                      <h4>web design</h4>
+                      <h4>Web Development</h4>
                       <p>
-                        interger purus adio, placerat ni in, ullamcorper nec
-                        dolor.
+                        Our web app development services offer modern and responsive solutions for cross-platform and cross browser apps.
                       </p>
                       <Link
                         onClick={scrollTop}
@@ -82,10 +81,9 @@ function WhatWeDoArea() {
                       </i>
                     </div>
                     <div className="service-content">
-                      <h4>App design</h4>
+                      <h4>ECOMMERECE & SHOPPING CART</h4>
                       <p>
-                        interger purus adio, placerat ni in, ullamcorper nec
-                        dolor.
+                        The Online shopping trends are rising in post covid times so our eCommerce services
                       </p>
                       <Link
                         onClick={scrollTop}
@@ -120,10 +118,9 @@ function WhatWeDoArea() {
                       </i>
                     </div>
                     <div className="service-content">
-                      <h4>Developing</h4>
+                      <h4>CLOUD COMPUTING</h4>
                       <p>
-                        interger purus adio, placerat ni in, ullamcorper nec
-                        dolor.
+                        We offer a complete range of cloud-based automated migration solutions for safely migrating your enterprise.
                       </p>
                       <Link
                         onClick={scrollTop}
@@ -158,10 +155,11 @@ function WhatWeDoArea() {
                       </i>
                     </div>
                     <div className="service-content">
-                      <h4>Graphic design</h4>
+                      <h4>MOBILE
+                        APP
+                        DEVELOPMENT</h4>
                       <p>
-                        interger purus adio, placerat ni in, ullamcorper nec
-                        dolor.
+                      We at Visnext offer advanced and feature-rich mobile development.
                       </p>
                       <Link
                         onClick={scrollTop}
@@ -198,9 +196,9 @@ function WhatWeDoArea() {
                   </i>
                 </div>
                 <div className="service-content">
-                  <h4>Video Animation</h4>
+                  <h4>APP PROTOTYPE & STRATEGY</h4>
                   <p>
-                    interger purus adio, placerat ni in, ullamcorper nec dolor.
+                  We strive to create high-fidelity prototypes that enable our clients.
                   </p>
                   <Link
                     onClick={scrollTop}
@@ -235,9 +233,9 @@ function WhatWeDoArea() {
                   </i>
                 </div>
                 <div className="service-content">
-                  <h4>3D Design</h4>
+                  <h4>BLOCKCHAIN TECHNOLOGY</h4>
                   <p>
-                    interger purus adio, placerat ni in, ullamcorper nec dolor.
+                  We work with startups and enterprises to integrate security infrastructures with data safety.
                   </p>
                   <Link
                     onClick={scrollTop}
@@ -272,9 +270,9 @@ function WhatWeDoArea() {
                   </i>
                 </div>
                 <div className="service-content">
-                  <h4>UI/UX Design</h4>
+                  <h4>INTERNET OF THINGS</h4>
                   <p>
-                    interger purus adio, placerat ni in, ullamcorper nec dolor.
+                  Our IoT services help you reinvent your business and achieve your business goals.
                   </p>
                   <Link
                     onClick={scrollTop}
@@ -292,6 +290,121 @@ function WhatWeDoArea() {
                     </i>
                   </Link>
                 </div>
+                
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4 col-xl-4">
+              <div className="single-service">
+                <span className="count">08</span>
+                <div className="service-icon">
+                  <i>
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/images/icons/service-icon-7.png"
+                      }
+                      alt="images"
+                    />
+                  </i>
+                </div>
+                <div className="service-content">
+                  <h4>ARTIFICIAL INTERLLIGENCE</h4>
+                  <p>
+                  our clients are offered Ai services that combine cloud computing.
+                  </p>
+                  <Link
+                    onClick={scrollTop}
+                    to={`${process.env.PUBLIC_URL}/service-details`}
+                  >
+                    read more
+                    <i>
+                      <img
+                        src={
+                          process.env.PUBLIC_URL +
+                          "/images/icons/arrow-circle.png"
+                        }
+                        alt="images"
+                      />
+                    </i>
+                  </Link>
+                </div>
+                
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4 col-xl-4">
+              <div className="single-service">
+                <span className="count">09</span>
+                <div className="service-icon">
+                  <i>
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/images/icons/service-icon-7.png"
+                      }
+                      alt="images"
+                    />
+                  </i>
+                </div>
+                <div className="service-content">
+                  <h4>CYBER SECURITY</h4>
+                  <p>
+                  We offer our clients testing and monitoring to improve the resilience.
+                  </p>
+                  <Link
+                    onClick={scrollTop}
+                    to={`${process.env.PUBLIC_URL}/service-details`}
+                  >
+                    read more
+                    <i>
+                      <img
+                        src={
+                          process.env.PUBLIC_URL +
+                          "/images/icons/arrow-circle.png"
+                        }
+                        alt="images"
+                      />
+                    </i>
+                  </Link>
+                </div>
+                
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4 col-xl-4">
+              <div className="single-service">
+                <span className="count">10</span>
+                <div className="service-icon">
+                  <i>
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/images/icons/service-icon-7.png"
+                      }
+                      alt="images"
+                    />
+                  </i>
+                </div>
+                <div className="service-content">
+                  <h4>OFFSHORE STAFFING</h4>
+                  <p>
+                  You can consult our developers to stat on your groundbreaking project.
+                  </p>
+                  <Link
+                    onClick={scrollTop}
+                    to={`${process.env.PUBLIC_URL}/service-details`}
+                  >
+                    read more
+                    <i>
+                      <img
+                        src={
+                          process.env.PUBLIC_URL +
+                          "/images/icons/arrow-circle.png"
+                        }
+                        alt="images"
+                      />
+                    </i>
+                  </Link>
+                </div>
+                
               </div>
             </div>
           </div>
