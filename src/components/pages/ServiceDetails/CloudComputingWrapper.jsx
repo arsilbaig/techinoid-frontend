@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-function EcommerceDetails() {
+
+function CloudComputingWrapper() {
     const scrollTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
@@ -19,7 +20,7 @@ function EcommerceDetails() {
                                         }
                                         alt="images"
                                     /> */}
-                                    ECOMMERECE & SHOPPING CART
+                                 Cloud Computing 
                                 </h3>
                                 <p>
                                     An ecommerce shopping cart is a virtual cart that stores the items a shopper wants to purchase. When the shopper is ready to checkout, they enter the necessary information, such as:
@@ -250,4 +251,4 @@ function EcommerceDetails() {
     );
 }
 
-export default EcommerceDetails;
+export default CloudComputingWrapper;

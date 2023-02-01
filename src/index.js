@@ -16,8 +16,11 @@ import HomePage2 from "./components/pages/Home2/HomePage2";
 import ProjectDetailsPage from "./components/pages/projectDetails/ProjectDetailsPage";
 import ProjectsPage from "./components/pages/projects/ProjectsPage";
 import ServicesPage from "./components/pages/service/Serevices";
+import CloudComputingDetails from "./components/pages/ServiceDetails/CloudComputingDetails";
+import CloudComputingWrapper from "./components/pages/ServiceDetails/CloudComputingWrapper";
 import Ecommerce from "./components/pages/ServiceDetails/Ecommerce";
 import EcommerceDetails from "./components/pages/ServiceDetails/EcommerceDetails";
+import MobileAppDevelopmentDetails from "./components/pages/ServiceDetails/MobileAppDevelopmentDetails";
 // import ServicesPage from "./components/pages/service/ServicesPage";
 import ServiceDetails from "./components/pages/ServiceDetails/ServiceDetails";
 
@@ -65,6 +68,16 @@ function Root() {
               exact
               path={`${process.env.PUBLIC_URL}/service-details`}
               component={ServiceDetails}
+            />
+             <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/cloud-computing-details`}
+              component={CloudComputingDetails}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/mobile-details`}
+              component={MobileAppDevelopmentDetails}
             />
             <Route
               exact
