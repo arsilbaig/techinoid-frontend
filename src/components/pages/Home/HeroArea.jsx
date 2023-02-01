@@ -53,9 +53,10 @@ function HeroArea() {
                       <div className="hero-content-wrap">
                         <div className="hero-content-img">
                           <img
+                          style={{height:450}}
                             src={
                               process.env.PUBLIC_URL +
-                              "/images/hero-slider-1.jpg"
+                              "/images/crypto.png"
                             }
                             alt="images"
                           />
@@ -63,15 +64,12 @@ function HeroArea() {
                         <div className="hero-content">
                           <h2>Creative</h2>
                           <h1>
-                            Best solution for your <span>Business.</span>
+                          Cryptocurrency  
                           </h1>
                           <p>
-                            Curabitur sed facilisis erat. Vestibulum pharetra
-                            eros eget fringilla an Duis a orci nunc. Suspendisse
-                            ac convallis sapien, quis commodosani libero. Donec
-                            nec dui luctus, pellentesque lacus sed, mollis leo.
+                          Cryptocurrency is a digital payment system that doesn't rely on banks to verify transactions. It’s a peer-to-peer system that can enable anyone anywhere to send and receive payments. Instead of being physical money carried around and exchanged in the real world.
                           </p>
-                          <Link
+                          {/* <Link
                             onClick={scrollTop}
                             to={`${process.env.PUBLIC_URL}/about`}
                             className="about-btn"
@@ -84,7 +82,7 @@ function HeroArea() {
                             className="work-btn"
                           >
                             How we work
-                          </Link>
+                          </Link> */}
                           <div className="slider-num">
                             <span>01</span>
                           </div>
@@ -103,9 +101,10 @@ function HeroArea() {
                       <div className="hero-content-wrap">
                         <div className="hero-content-img">
                           <img
+                              style={{height:450}}
                             src={
                               process.env.PUBLIC_URL +
-                              "/images/hero-slider-2.png"
+                              "/images/heath.jpg"
                             }
                             alt="images"
                           />
@@ -113,15 +112,14 @@ function HeroArea() {
                         <div className="hero-content">
                           <h2>Creative</h2>
                           <h1>
-                            Best solution for your <span>Finances.</span>
+                          Health care 
                           </h1>
                           <p>
-                            Curabitur sed facilisis erat. Vestibulum pharetra
-                            eros eget fringilla an Duis a orci nunc. Suspendisse
-                            ac convallis sapien, quis commodosani libero. Donec
-                            nec dui luctus, pellentesque lacus sed, mollis leo.
+                          Create a system for storing, managing and sharing patient health information securely between
+                           healthcare providers.Develop software that provides physicians and other 
+                           healthcare providers with information and guidance to assist in making informed medical decisions
                           </p>
-                          <Link
+                          {/* <Link
                             onClick={scrollTop}
                             to={`${process.env.PUBLIC_URL}/about`}
                             className="about-btn"
@@ -134,7 +132,7 @@ function HeroArea() {
                             className="work-btn"
                           >
                             How we work
-                          </Link>
+                          </Link> */}
                           <div className="slider-num">
                             <span>02</span>
                           </div>
@@ -155,7 +153,7 @@ function HeroArea() {
                           <img
                             src={
                               process.env.PUBLIC_URL +
-                              "/images/hero-slider-3.png"
+                              "/images/fianance.jpg"
                             }
                             alt="images"
                           />
@@ -163,28 +161,15 @@ function HeroArea() {
                         <div className="hero-content">
                           <h2>Creative</h2>
                           <h1>
-                            Best solution for your <span>Markets.</span>
+                            Best solution for your <span>Finance</span>
                           </h1>
                           <p>
-                            Curabitur sed facilisis erat. Vestibulum pharetra
-                            eros eget fringilla an Duis a orci nunc. Suspendisse
-                            ac convallis sapien, quis commodosani libero. Donec
-                            nec dui luctus, pellentesque lacus sed, mollis leo.
+                          Create a system to help financial institutions quantify and manage
+                           risks associated with various investment products. Explore the use of 
+                           blockchain technology in areas such as payments, digital assets,
+                            supply chain finance, and trade finance.
                           </p>
-                          <Link
-                            onClick={scrollTop}
-                            to={`${process.env.PUBLIC_URL}/about`}
-                            className="about-btn"
-                          >
-                            About us
-                          </Link>
-                          <Link
-                            onClick={scrollTop}
-                            to={`${process.env.PUBLIC_URL}/project-details`}
-                            className="work-btn"
-                          >
-                            How we work
-                          </Link>
+                       
                           <div className="slider-num">
                             <span>03</span>
                           </div>

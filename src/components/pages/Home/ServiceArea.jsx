@@ -30,6 +30,7 @@ function ServiceArea() {
             <div className="col-md-12 col-lg-8 col-xl-8">
               <div className="row g-4">
                 <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+
                   <div className="single-service">
                     <span className="count">01</span>
                     <div className="service-icon">
@@ -44,10 +45,9 @@ function ServiceArea() {
                       </i>
                     </div>
                     <div className="service-content">
-                      <h4>web design</h4>
+                      <h4>Web Development</h4>
                       <p>
-                        Fusce ornare mauris nisi, id fringilla turpis vehicula
-                        justo lectus, ultricies nec sem
+                        Our web app development services offer modern and responsive solutions for cross-platform and cross browser apps.
                       </p>
                       <Link
                         onClick={scrollTop}
@@ -68,6 +68,7 @@ function ServiceArea() {
                   </div>
                 </div>
                 <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              
                   <div className="single-service">
                     <span className="count">02</span>
                     <div className="service-icon">
@@ -82,10 +83,9 @@ function ServiceArea() {
                       </i>
                     </div>
                     <div className="service-content">
-                      <h4>App design</h4>
+                      <h4>ECOMMERECE & SHOPPING CART</h4>
                       <p>
-                        Maecenas ut est in ante imperdiet laoreet eu quis elit
-                        laoreet Phasellus Door
+                        The Online shopping trends are rising in post covid times so our eCommerce services
                       </p>
                       <Link
                         onClick={scrollTop}
@@ -104,8 +104,11 @@ function ServiceArea() {
                       </Link>
                     </div>
                   </div>
+
+
                 </div>
                 <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                 
                   <div className="single-service">
                     <span className="count">03</span>
                     <div className="service-icon">
@@ -120,10 +123,9 @@ function ServiceArea() {
                       </i>
                     </div>
                     <div className="service-content">
-                      <h4>Developing</h4>
+                      <h4>CLOUD COMPUTING</h4>
                       <p>
-                        Etiam eu ullamcorper ipsum. Pellentesque eu ipsum luctus
-                        libero euismod
+                        We offer a complete range of cloud-based automated migration solutions for safely migrating your enterprise.
                       </p>
                       <Link
                         onClick={scrollTop}
@@ -144,6 +146,8 @@ function ServiceArea() {
                   </div>
                 </div>
                 <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                
+
                   <div className="single-service">
                     <span className="count">04</span>
                     <div className="service-icon">
@@ -158,10 +162,11 @@ function ServiceArea() {
                       </i>
                     </div>
                     <div className="service-content">
-                      <h4>Graphic design</h4>
+                      <h4>MOBILE
+                        APP
+                        DEVELOPMENT</h4>
                       <p>
-                        Quisque in massa nunc. Etiam blandit tortor nisl, auctor
-                        vulputate felis convallis at.
+                        We at Visnext offer advanced and feature-rich mobile development.
                       </p>
                       <Link
                         onClick={scrollTop}
