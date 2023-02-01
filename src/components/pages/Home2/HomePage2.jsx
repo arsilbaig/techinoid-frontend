@@ -18,7 +18,7 @@ function HomePage2(props) {
       <OurPartnerArea />
       <PortfolioArea black="" />
       <WhyChooseUsArea black="" light="dark" lable="progressbar-label" />
-      <TestimonialArea />
+      {/* <TestimonialArea /> */}
       <NewsLatterArea />
       <LetsTalkArea />
     </>

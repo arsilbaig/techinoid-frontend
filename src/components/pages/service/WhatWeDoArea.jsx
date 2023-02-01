@@ -87,7 +87,7 @@ function WhatWeDoArea() {
                       </p>
                       <Link
                         onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/service-details`}
+                        to={`${process.env.PUBLIC_URL}/ecommerce-details`}
                       >
                         read more
                         <i>
@@ -304,7 +304,7 @@ function WhatWeDoArea() {
                         "/images/icons/service-icon-7.png"
                       }
                       alt="images"
-                    />
+                  />
                   </i>
                 </div>
                 <div className="service-content">

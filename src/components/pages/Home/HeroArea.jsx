@@ -196,7 +196,7 @@ function HeroArea() {
               </a>
             </li>
             <li>
-              <a rel="noopener noreferrer" href="https://www.linkedin.com/">
+              <a rel="noopener noreferrer" href="https://www.linkedin.com/company/techinoid/mycompany/">
                 Linked in
               </a>
             </li>

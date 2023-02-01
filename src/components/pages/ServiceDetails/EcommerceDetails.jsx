@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-function ServiceDetailsWrapper() {
+function EcommerceDetails() {
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -19,7 +19,7 @@ function ServiceDetailsWrapper() {
                     }
                     alt="images"
                   />
-                  Web Development
+               ECOMMERECE & SHOPPING CART
                 </h3>
                 <p>
                   Web development refers to the process of creating and maintaining websites.
@@ -245,4 +245,4 @@ function ServiceDetailsWrapper() {
   );
 }
 
-export default ServiceDetailsWrapper;
+export default EcommerceDetails;

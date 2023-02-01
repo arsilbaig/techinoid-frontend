@@ -12,9 +12,9 @@ function WhyChooseUsArea(props) {
           <div className="row">
             <div className="col-md-6 col-lg-6 col-xl-6">
               <div className={`title ${props.black}`}>
-                <span>Why Choose Finibus</span>
+                <span>Why Choose Techinoid</span>
                 <h2 className="mb-15">
-                  success is just around the next online corner
+                  success is just around the next  corner
                 </h2>
               </div>
               <div className="video-demo">
@@ -36,7 +36,7 @@ function WhyChooseUsArea(props) {
                   alt="images"
                 />
                 <div className="signle-bar pt-0">
-                  <h6>Web Design</h6>
+                  <h6>Web Developement</h6>
                   <ProgressBar
                     bgColor="#D90A2C"
                     baseBgColor="#d90a2c80"
@@ -49,33 +49,7 @@ function WhyChooseUsArea(props) {
                   />
                 </div>
                 <div className="signle-bar">
-                  <h6>App Development</h6>
-                  <ProgressBar
-                    bgColor="#D90A2C"
-                    baseBgColor="#d90a2c80"
-                    height="5px"
-                    completed={75}
-                    labelAlignment="outside"
-                    labelColor="#000"
-                    animateOnRender={true}
-                    labelClassName={`${props.lable}`}
-                  />
-                </div>
-                <div className="signle-bar">
-                  <h6>Backend</h6>
-                  <ProgressBar
-                    bgColor="#D90A2C"
-                    baseBgColor="#d90a2c80"
-                    height="5px"
-                    completed={55}
-                    labelAlignment="outside"
-                    labelColor="#000"
-                    animateOnRender={true}
-                    labelClassName={`${props.lable}`}
-                  />
-                </div>
-                <div className="signle-bar">
-                  <h6>Video Animation</h6>
+                  <h6>Blockchain Technology</h6>
                   <ProgressBar
                     // className="barsss"
                     bgColor="#D90A2C"
@@ -88,6 +62,39 @@ function WhyChooseUsArea(props) {
                     animateOnRender={true}
                   />
                 </div>
+               
+                <div className="signle-bar">
+                  <h6>Mobile App Development</h6>
+                  <ProgressBar
+                    // className="barsss"
+                    bgColor="#D90A2C"
+                    baseBgColor="#d90a2c80"
+                    height="5px"
+                    completed={65}
+                    labelClassName={`${props.lable}`}
+                    labelAlignment="outside"
+                    labelColor="#000"
+                    animateOnRender={true}
+                  />
+                </div>
+               
+             
+                <div className="signle-bar">
+                  <h6>Internet of Things</h6>
+                  <ProgressBar
+                    // className="barsss"
+                    bgColor="#D90A2C"
+                    baseBgColor="#d90a2c80"
+                    height="5px"
+                    completed={65}
+                    labelClassName={`${props.lable}`}
+                    labelAlignment="outside"
+                    labelColor="#000"
+                    animateOnRender={true}
+                  />
+                </div>
+              
+              
               </div>
             </div>
           </div>

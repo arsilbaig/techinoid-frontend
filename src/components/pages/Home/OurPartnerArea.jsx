@@ -2,16 +2,17 @@ import React from "react";
 function OurPartnerArea() {
   return (
     <>
-      <section className="our-partner">
+      <section className="our-partner" style={{paddingTop:10}}>
         <div className="container-fluid g-0 overflow-hidden">
           <div className="row align-items-center g-0">
             <div className="col-12 col-xl-6">
               <div className="newsletter">
                 <div className="subscribes">
                   <span>Get In Touch</span>
-                  <h1>Subscribe Our</h1>
-                  <h2>Newsletter</h2>
-                  <div className="subscribe-form">
+
+                  {/* <h1>Subscribe Our</h1>
+                  <h2>Newsletter</h2> */}
+                  <div className="subscribe-form" >
                     <form
                       onSubmit={(e) => e.preventDefault()}
                       action="#"
@@ -31,13 +32,12 @@ function OurPartnerArea() {
             <div className="col-12 col-xl-6">
               <div className="our-clients">
                 <div className="row align-items-center">
-                  <div className="col-md-6 col-lg-4 col-xl-6">
-                    <div className="title">
-                      <span>Our partner</span>
-                      <h2>Join our Finibus community.</h2>
+                  <div className="col-md-6 col-lg-4 col-xl-6" style={{paddingTop:85, paddingBottom:85}}>
+                    <div className="title" >
+                      <h2>Join our Techinoid community.</h2>
                     </div>
                   </div>
-                  <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                  {/* <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div className="single-client">
                       <img
                         src={
@@ -176,7 +176,7 @@ function OurPartnerArea() {
                         <span>www.example.com</span>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

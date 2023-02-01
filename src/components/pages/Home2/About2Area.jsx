@@ -24,11 +24,11 @@ function About2Area() {
                   <h2 className="mb-15">Direction with our company.</h2>
                 </div>
                 <p>
-                  Integer purus odio, placerat nec rhoncus in, ullamcorper nec
-                  dolor. Classe aptent taciti sociosqu ad litora torquent per
-                  conubia nostra, per inceptos himenaeos. Praesent nec neque at
-                  dolor venenatis consectetur eu quis ei Donec lacinia placerat
-                  felis non aliquam.Integer purus odio.
+                Focus on providing quality software products 
+                or services that meet the needs and wants of your
+                 target customers.Build and maintain a strong, professional,
+                  and efficient team of software developers, 
+                  designers, and support staff.
                 </p>
                 <div className="our-mission">
                   <div className="msn-icon">
@@ -45,17 +45,8 @@ function About2Area() {
                   <div className="msn-content">
                     <h5>Our Mission</h5>
                     <p>
-                      Integer purus odio, placerat nec rhoni olor Class online
-                      and video.
+                    o create innovative software solutions that simplify and improve the lives of our customers.
                     </p>
-                  </div>
-                  <div className="cto">
-                    <img
-                      src={
-                        process.env.PUBLIC_URL + "/images/ctoFounder-dark.png"
-                      }
-                      alt="imgs"
-                    />
                   </div>
                 </div>
                 <div className="cmn-btn">
@@ -105,7 +96,7 @@ function About2Area() {
               </div>
             </div>
           </div>
-          <div className="features-count">
+          {/* <div className="features-count">
             <div className="row">
               <div className="col-sm-6 col-md-3 col-lg-3 col-xl-3">
                 <div className="single-count">
@@ -164,7 +155,7 @@ function About2Area() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
