@@ -352,7 +352,7 @@ function WhatWeDoArea() {
                   </p>
                   <Link
                     onClick={scrollTop}
-                    to={`${process.env.PUBLIC_URL}/service-details`}
+                    to={`${process.env.PUBLIC_URL}/cyber-secuity-details`}
                   >
                     read more
                     <i>
@@ -390,7 +390,7 @@ function WhatWeDoArea() {
                   </p>
                   <Link
                     onClick={scrollTop}
-                    to={`${process.env.PUBLIC_URL}/service-details`}
+                    to={`${process.env.PUBLIC_URL}/offshore-details`}
                   >
                     read more
                     <i>

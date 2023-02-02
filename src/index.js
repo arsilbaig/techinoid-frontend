@@ -21,11 +21,13 @@ import AIWrapper from "./components/pages/ServiceDetails/AIWrapper";
 import BlockChainDetails from "./components/pages/ServiceDetails/BlockChainDetails";
 import CloudComputingDetails from "./components/pages/ServiceDetails/CloudComputingDetails";
 import CloudComputingWrapper from "./components/pages/ServiceDetails/CloudComputingWrapper";
+import CyberSecurityDetails from "./components/pages/ServiceDetails/CyberSecurityDetails";
 import Ecommerce from "./components/pages/ServiceDetails/Ecommerce";
 import EcommerceDetails from "./components/pages/ServiceDetails/EcommerceDetails";
 import IOTDetails from "./components/pages/ServiceDetails/IOTDetails";
 import IOTWrapper from "./components/pages/ServiceDetails/IOTWrapper";
 import MobileAppDevelopmentDetails from "./components/pages/ServiceDetails/MobileAppDevelopmentDetails";
+import OffShoreDetails from "./components/pages/ServiceDetails/OffShoreDetails";
 import PrototypeAndStrategyDetails from "./components/pages/ServiceDetails/PrototypeAndStrategyDetails";
 // import ServicesPage from "./components/pages/service/ServicesPage";
 import ServiceDetails from "./components/pages/ServiceDetails/ServiceDetails";
@@ -109,6 +111,16 @@ function Root() {
               exact
               path={`${process.env.PUBLIC_URL}/AI-details`}
               component={AIDetails}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/cyber-secuity-details`}
+              component={CyberSecurityDetails}
+            />
+             <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/offshore-details`}
+              component={OffShoreDetails}
             />
             <Route
               exact
