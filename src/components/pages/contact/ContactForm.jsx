@@ -52,7 +52,7 @@ function ContactForm() {
             <div className="col-lg-6 col-xl-6">
               <div className="google-map">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.3701967527613!2d90.39056151540181!3d23.734174695311943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c1f25e613d%3A0xaad562eec578f8ff!2sArts%20Faculty%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1644381552436!5m2!1sen!2sbd"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.348018663377!2d74.3426116149667!3d31.51460018137157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190573d80f41bd%3A0x2e5c341b610ea82!2sAl%20Hafeez%20Heights!5e0!3m2!1sen!2s!4v1675344724206!5m2!1sen!2s"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
