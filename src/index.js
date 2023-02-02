@@ -16,11 +16,17 @@ import HomePage2 from "./components/pages/Home2/HomePage2";
 import ProjectDetailsPage from "./components/pages/projectDetails/ProjectDetailsPage";
 import ProjectsPage from "./components/pages/projects/ProjectsPage";
 import ServicesPage from "./components/pages/service/Serevices";
+import AIDetails from "./components/pages/ServiceDetails/AIDetails";
+import AIWrapper from "./components/pages/ServiceDetails/AIWrapper";
+import BlockChainDetails from "./components/pages/ServiceDetails/BlockChainDetails";
 import CloudComputingDetails from "./components/pages/ServiceDetails/CloudComputingDetails";
 import CloudComputingWrapper from "./components/pages/ServiceDetails/CloudComputingWrapper";
 import Ecommerce from "./components/pages/ServiceDetails/Ecommerce";
 import EcommerceDetails from "./components/pages/ServiceDetails/EcommerceDetails";
+import IOTDetails from "./components/pages/ServiceDetails/IOTDetails";
+import IOTWrapper from "./components/pages/ServiceDetails/IOTWrapper";
 import MobileAppDevelopmentDetails from "./components/pages/ServiceDetails/MobileAppDevelopmentDetails";
+import PrototypeAndStrategyDetails from "./components/pages/ServiceDetails/PrototypeAndStrategyDetails";
 // import ServicesPage from "./components/pages/service/ServicesPage";
 import ServiceDetails from "./components/pages/ServiceDetails/ServiceDetails";
 
@@ -81,8 +87,28 @@ function Root() {
             />
             <Route
               exact
+              path={`${process.env.PUBLIC_URL}/prototype-details`}
+              component={PrototypeAndStrategyDetails}
+            />
+             <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/blockchain-details`}
+              component={BlockChainDetails}
+            />
+            <Route
+              exact
               path={`${process.env.PUBLIC_URL}/ecommerce-details`}
               component={Ecommerce}
+            />
+             <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/IOT-details`}
+              component={IOTDetails}
+            />
+              <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/AI-details`}
+              component={AIDetails}
             />
             <Route
               exact

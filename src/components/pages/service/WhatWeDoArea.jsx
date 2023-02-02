@@ -202,7 +202,7 @@ function WhatWeDoArea() {
                   </p>
                   <Link
                     onClick={scrollTop}
-                    to={`${process.env.PUBLIC_URL}/service-details`}
+                    to={`${process.env.PUBLIC_URL}/prototype-details`}
                   >
                     read more
                     <i>
@@ -239,7 +239,7 @@ function WhatWeDoArea() {
                   </p>
                   <Link
                     onClick={scrollTop}
-                    to={`${process.env.PUBLIC_URL}/service-details`}
+                    to={`${process.env.PUBLIC_URL}/blockchain-details`}
                   >
                     read more
                     <i>
@@ -276,7 +276,7 @@ function WhatWeDoArea() {
                   </p>
                   <Link
                     onClick={scrollTop}
-                    to={`${process.env.PUBLIC_URL}/service-details`}
+                    to={`${process.env.PUBLIC_URL}/IOT-details`}
                   >
                     read more
                     <i>
@@ -314,7 +314,7 @@ function WhatWeDoArea() {
                   </p>
                   <Link
                     onClick={scrollTop}
-                    to={`${process.env.PUBLIC_URL}/service-details`}
+                    to={`${process.env.PUBLIC_URL}/AI-details`}
                   >
                     read more
                     <i>
