@@ -11,7 +11,9 @@ import BlogDetailsPage from "./components/pages/blogDetails/BlogDetailsPage";
 import BlogStandardPage from "./components/pages/blogStandard/BlogStandardPage";
 import CommingSoonPage from "./components/pages/commingSoon/CommingSoonPage";
 import Careers from "./components/pages/contact/Careers";
+import CareersDetails from "./components/pages/contact/CareersDetails";
 import ContactPage from "./components/pages/contact/ContactPage";
+import JobForm from "./components/pages/contact/JobForm";
 import ErrorPage from "./components/pages/Error/ErrorPage";
 import HomePage2 from "./components/pages/Home2/HomePage2";
 import ProjectDetailsPage from "./components/pages/projectDetails/ProjectDetailsPage";
@@ -162,6 +164,16 @@ function Root() {
               exact
               path={`${process.env.PUBLIC_URL}/careers`}
               component={Careers}
+            />
+             <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/CareersDetails`}
+              component={CareersDetails}
+            />
+             <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/jobForm`}
+              component={JobForm}
             />
           </Layout>
         </Switch>
