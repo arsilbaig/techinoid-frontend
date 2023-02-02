@@ -23,11 +23,11 @@ function InsideStoryArea() {
                 <div className="story-left">
                   <div className="office-group-img">
                     <img
-                      src={process.env.PUBLIC_URL + "/images/story.png"}
+                      src={process.env.PUBLIC_URL + "/images/techinoid.jpg"}
                       alt="images"
                     />
                     <div className="cto-message-wrapper">
-                      <div className="cto-message">
+                      {/* <div className="cto-message">
                         <p>
                           Integer purus odio, placerat neclessi rhoncus in,
                           ullamcorper nec dolor.ol aptent taciti sociosqu.
@@ -41,7 +41,7 @@ function InsideStoryArea() {
                           }
                           alt="images"
                         />
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -51,17 +51,13 @@ function InsideStoryArea() {
                   <div className="title black">
                     <span>Inside Story</span>
                     <h2 className="mb-15">
-                      We are creative Agency that creates beautiful.
+                      We are software agency responsible to provide best solutions.
                     </h2>
                   </div>
                   <p>
-                    Integer purus odio, placerat nec rhoncus in, ullamcorper nec
-                    dolor. Classe aptent taciti sociosqu ad litora torquent per
-                    conubia nostra, per inceptosi himenaeos. Praesent nec neque
-                    at dolor venenatis consectetur eu quis e Donec lacinia
-                    placerat felis non aliquam.Integer purus odio.
+                    Techinoid is your one-stop technology solution for all the conventional and modern day challenges. We are a bunch of tech-savvy geeks aimed at re-designing your life and more importantly, the way you conduct business. We strive to craft innovative digital solutions that alter the way people and organisations function and interact with each other and their environment. We earn your trust day-by-day “everyday” by doing that little bit extra than what others have to offer. Below are a few reasons that differentiates us from others.
                   </p>
-                  <div className="story-skills">
+                  {/* <div className="story-skills">
                     <div className="story-skill">
                       <CircularProgressbar
                         {...circlebar}
@@ -99,7 +95,7 @@ function InsideStoryArea() {
                       />
                       <span>Developing &amp; Launch</span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

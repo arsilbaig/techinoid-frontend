@@ -10,6 +10,7 @@ import BlogPage from "./components/pages/blog/BlogPage";
 import BlogDetailsPage from "./components/pages/blogDetails/BlogDetailsPage";
 import BlogStandardPage from "./components/pages/blogStandard/BlogStandardPage";
 import CommingSoonPage from "./components/pages/commingSoon/CommingSoonPage";
+import Careers from "./components/pages/contact/Careers";
 import ContactPage from "./components/pages/contact/ContactPage";
 import ErrorPage from "./components/pages/Error/ErrorPage";
 import HomePage2 from "./components/pages/Home2/HomePage2";
@@ -156,6 +157,11 @@ function Root() {
               exact
               path={`${process.env.PUBLIC_URL}/contact`}
               component={ContactPage}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/careers`}
+              component={Careers}
             />
           </Layout>
         </Switch>

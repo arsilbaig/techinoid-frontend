@@ -28,7 +28,7 @@ function TestimonialArea() {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="swiper testimonial-slider">
+              {/* <div className="swiper testimonial-slider">
                 <Swiper
                   pagination={{
                     type: "fraction",
@@ -44,24 +44,21 @@ function TestimonialArea() {
                       <div className="client-info">
                         <div className="client-pic">
                           <img
-                            src={process.env.PUBLIC_URL + "/images/client.jpg"}
+                            src={process.env.PUBLIC_URL + "/images/shoaib.jpg"}
                             alt="images"
                           />
                         </div>
                         <div className="client-details">
-                          <h4>Savannah Nguyen</h4>
-                          <span>Executive CEO</span>
+                          <h4>Shoaib Rafaqat</h4>
+                          <span>CEO</span>
                         </div>
                       </div>
                       <p>
-                        <i className="fas fa-quote-left" /> Curabitur magna
-                        nisi, egestas quis est in, finibus pulvinar ipsum. Nunc
-                        sit amet odio interdum, maximus dolor quis, ullamcorper
-                        lectus. Mauris vitae faucibus libero. Curabitur eu
-                        convallis purus. Nunc accumsan diam in arcu pellentesque
-                        sagittis. Curabitur dolor odio, aliquam vitae noday
-                        backowner condimentum this fire ongon then only on{" "}
+                        <i className="fas fa-quote-left" /> 
+                        No man can be successful, unless he first loves his work.
                         <i className="fas fa-quote-right" />
+                        <br></br>
+                        responsible for leading and managing the company's overall strategy and operations.
                       </p>
                       <div className="rating">
                         <i className="fas fa-star" />
@@ -87,18 +84,12 @@ function TestimonialArea() {
                           />
                         </div>
                         <div className="client-details">
-                          <h4>Nailong Jeso</h4>
+                          <h4>Junaid Afzal</h4>
                           <span>CTO Founder</span>
                         </div>
                       </div>
                       <p>
-                        <i className="fas fa-quote-left" /> Curabitur magna
-                        nisi, egestas quis est in, finibus pulvinar ipsum. Nunc
-                        sit amet odio interdum, maximus dolor quis, ullamcorper
-                        lectus. Mauris vitae faucibus libero. Curabitur eu
-                        convallis purus. Nunc accumsan diam in arcu pellentesque
-                        sagittis. Curabitur dolor odio, aliquam vitae noday
-                        backowner condimentum this fire ongon then only on{" "}
+                        <i className="fas fa-quote-left" /> Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.
                         <i className="fas fa-quote-right" />
                       </p>
                       <div className="rating">
@@ -125,18 +116,13 @@ function TestimonialArea() {
                           />
                         </div>
                         <div className="client-details">
-                          <h4>Gautam Yamni</h4>
-                          <span>Designer Head</span>
+                          <h4>Arslan Baig</h4>
+                          <span>COO</span>
                         </div>
                       </div>
                       <p>
-                        <i className="fas fa-quote-left" /> Curabitur magna
-                        nisi, egestas quis est in, finibus pulvinar ipsum. Nunc
-                        sit amet odio interdum, maximus dolor quis, ullamcorper
-                        lectus. Mauris vitae faucibus libero. Curabitur eu
-                        convallis purus. Nunc accumsan diam in arcu pellentesque
-                        sagittis. Curabitur dolor odio, aliquam vitae noday
-                        backowner condimentum this fire ongon then only on{" "}
+                        <i className="fas fa-quote-left" /> 
+                        The best way to find yourself is to lose yourself in the service of others.
                         <i className="fas fa-quote-right" />
                       </p>
                       <div className="rating">
@@ -152,7 +138,7 @@ function TestimonialArea() {
                 <div className="swiper-button-next" />
                 <div className="swiper-button-prev" />
                 <div className="swiper-pagination" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

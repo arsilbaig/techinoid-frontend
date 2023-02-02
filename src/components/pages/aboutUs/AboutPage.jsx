@@ -20,8 +20,8 @@ function AboutPage() {
       <InsideStoryArea />
       <AboutArea />
       <TestimonialArea />
-      <WhyChooseUsArea black="black" lable="" />
-      <LatesNewsArea />
+      {/* <WhyChooseUsArea black="black" lable="" /> */}
+      {/* <LatesNewsArea /> */}
       <LetsTalkArea />
     </>
   );

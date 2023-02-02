@@ -181,9 +181,7 @@ function Footer() {
                     <a rel="noopener noreferrer" href="mailto:info@techinoid.com">
                       info@techinoid.com
                     </a>
-                    <a rel="noopener noreferrer" href="mailto:info@support.com">
-                      info@support.com
-                    </a>
+                 
                   </div>
                 </div>
                 <div className="address">
@@ -223,7 +221,7 @@ function Footer() {
                   </li>
                   <li>
                     <Link onClick={scrollTop} to={"#"}>
-                      Terms of Service
+                      Careers
                     </Link>
                   </li>
                 </ul>

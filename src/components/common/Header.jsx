@@ -168,7 +168,7 @@ function Header() {
                       onClick={scrollTop}
                       to={`${process.env.PUBLIC_URL}/contact`}
                     >
-                      {'getAquote'}
+                      {'Careers'}
 
                     </Link>
                   </div>
@@ -190,9 +190,9 @@ function Header() {
                 <div className="cmn-btn">
                   <Link
                     onClick={scrollTop}
-                    to={`${process.env.PUBLIC_URL}/contact`}
+                    to={`${process.env.PUBLIC_URL}/careers`}
                   >
-                    Get a quote
+                  Careers
                   </Link>
                 </div>
               </div>

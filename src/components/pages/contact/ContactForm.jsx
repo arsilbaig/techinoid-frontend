@@ -1,7 +1,57 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactForm() {
+  const [userData , setUserData] = useState({
+    name:"",
+    email:"",
+    subject:"",
+    description:""
+  });
+
+
+  const dataHandler = (e) => {
+    let name = e.target.name;
+    let value = e.target.value;
+   setUserData({
+    ...userData, 
+    [name] : value
+   })
+  }
+ const [loader, setLoading] = useState(false);
+
+  const onSubmit = async(e) => {
+    
+    setLoading(true)
+    console.log(userData)
+   await axios.post('http://localhost:3001/contact/create', userData)
+    .then(response => console.log(response, "data added successfully"),
+    setLoading(false),
+    
+    toast.success('Success Notification !', {
+      position: toast.POSITION.TOP_RIGHT,
+       autoClose: 7000 
+  }),
+    
+    )
+    .catch(error => {
+      setLoading(false)
+      toast.error(error, {
+        position: toast.POSITION.TOP_RIGHT,
+         autoClose: 7000 
+    })
+        this.setState({ errorMessage: error.message });
+        console.error('There was an error!', error);
+    });
+
+   
+   
+    }
+  
+
   return (
     <>
       <div className="contact-information">
@@ -10,17 +60,14 @@ function ContactForm() {
             <div className="col-lg-6 col-xl-6">
               <div className="contact-form">
                 <h3>Have Any Questions</h3>
-                <form
-                  onSubmit={(e) => e.preventDefault()}
-                  action="#"
-                  method="post"
-                >
+                <form>
                   <div className="row">
                     <div className="col-12">
                       <input
                         type="text"
                         name="name"
                         placeholder="Enter your name"
+                        onChange={dataHandler}
                       />
                     </div>
                     <div className="col-xl-6">
@@ -28,22 +75,25 @@ function ContactForm() {
                         type="email"
                         name="email"
                         placeholder="Enter your email"
+                        onChange={dataHandler}
                       />
                     </div>
                     <div className="col-xl-6">
-                      <input type="text" name="subject" placeholder="Subject" />
+                      <input type="text" name="subject" placeholder="Subject"   onChange={dataHandler} />
+                    
                     </div>
                     <div className="col-12">
                       <textarea
-                        name="message"
+                        name="description"
                         cols={30}
                         rows={10}
                         placeholder="Your message"
                         defaultValue={""}
+                        onChange={ dataHandler}
                       />
                     </div>
                     <div className="col-12">
-                      <input type="submit" defaultValue="Send Message" />
+                      <input type="submit" defaultValue="Send Message"  onClick={onSubmit} loading={loader}/>
                     </div>
                   </div>
                 </form>
@@ -61,6 +111,7 @@ function ContactForm() {
             </div>
           </div>
         </div>
+        <ToastContainer />
       </div>
     </>
   );

@@ -43,6 +43,7 @@ function AboutArea() {
                       />
                     </i>
                   </div>
+                  <div style={{display :"flex", flexDirection:"column"}}>
                   <div className="msn-content">
                     <h5>Our Mission</h5>
                     <p>
@@ -50,12 +51,16 @@ function AboutArea() {
                       and video.
                     </p>
                   </div>
-                  <div className="cto">
-                    <img
-                      src={process.env.PUBLIC_URL + "/images/ctoFounder.png"}
-                      alt="imgs"
-                    />
+                  <div className="msn-content" style={{paddingTop:20}}>
+                    <h5>Our Vision</h5>
+                    <p>
+                      Integer purus odio, placerat nec rhoni olor Class online
+                      and video.
+                    </p>
                   </div>
+                  </div>
+                 
+               
                 </div>
                 <div className="cmn-btn">
                   <Link onClick={scrollTop} to={`${process.env.PUBLIC_URL}/about`}>About more</Link>
@@ -66,16 +71,16 @@ function AboutArea() {
               <div className="about-right">
                 <div className="group-images">
                   <img
-                    src={process.env.PUBLIC_URL + "/images/about-bottom.jpg"}
+                    src={process.env.PUBLIC_URL + "/images/m1.jpg"}
                     alt="images"
                   />
-                  <div className="about-top">
+                  {/* <div className="about-top">
                     <img
-                      src={process.env.PUBLIC_URL + "/images/about-top.png"}
+                      src={process.env.PUBLIC_URL + "/images/edit.png"}
                       alt="images"
                     />
-                  </div>
-                  <div className="about-skills">
+                  </div> */}
+                  {/* <div className="about-skills">
                     <div className="signle-skill">
                       <CircularProgressbar
                         value={Singlepercentage}
@@ -98,12 +103,12 @@ function AboutArea() {
                         <p>Developing</p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
-          <div className="features-count">
+          {/* <div className="features-count">
             <div className="row">
               <div className="col-sm-6 col-md-3 col-lg-3 col-xl-3">
                 <div className="single-count">
@@ -162,7 +167,7 @@ function AboutArea() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
