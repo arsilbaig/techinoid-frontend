@@ -167,7 +167,7 @@ function Root() {
             />
              <Route
               exact
-              path={`${process.env.PUBLIC_URL}/CareersDetails`}
+              path={`${process.env.PUBLIC_URL}/CareersDetails/:userId`}
               component={CareersDetails}
             />
              <Route

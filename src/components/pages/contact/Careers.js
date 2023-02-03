@@ -11,12 +11,13 @@ import axios from 'axios';
 
 
 export default function Careers() {
-    debugger
     const [jobs, setJobs] = useState([]);
     const getJobsData = async () => {
         const getJobs = await axios.get('http://localhost:3001/jobpost')
         setJobs(getJobs.data)
     }
+
+
 
     useEffect(() => {
         getJobsData();
@@ -25,16 +26,15 @@ export default function Careers() {
     return (
         <>
             <Breadcrumb pageName="Careers" />
-
             <div>
-                <div style={{ display: "flex", fontSize: 42, fontWeight: 600, justifyContent: "center", alignItems: "center", paddingBottom:50 , paddingTop:50}}>
+                <div style={{ display: "flex", fontSize: 42, fontWeight: 600, justifyContent: "center", alignItems: "center", paddingBottom: 50, paddingTop: 50 }}>
                     <h1>
                         Latest Openings
                     </h1>
                 </div>
                 {jobs.jobposts?.map((data, key) =>
-                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingBottom: 40, alignContent: "space-between", justifyContent: "space-between", paddingLeft:100, paddingRight:100, paddingBottom:50 }} >
-                        <Card style={{ width: "100%", minWidth: "50%", maxWidth: "100%"}}>
+                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingBottom: 40, alignContent: "space-between", justifyContent: "space-between", paddingLeft: 100, paddingRight: 100, paddingBottom: 50 }} >
+                        <Card style={{ width: "100%", minWidth: "50%", maxWidth: "100%" }}>
                             <CardContent>
                                 <div className="flex justify-between items-center" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                                     <div>
@@ -48,11 +48,8 @@ export default function Careers() {
 
                                     </div>
 
-
-
                                     <div>
-                                        <Link to="/CareersDetails">
-
+                                        <Link to={`/CareersDetails/${data.id}`} >
                                             <Button variant="contained" sx={{
                                                 padding: 1.5,
                                                 borderRadius: 10,
@@ -61,16 +58,8 @@ export default function Careers() {
                                         </Link>
                                     </div>
                                 </div>
-
-
                             </CardContent>
-
                         </Card>
-
-
-
-
-
                     </div>
                 )}
             </div>
