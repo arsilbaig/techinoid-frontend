@@ -21,7 +21,7 @@ export default function CareersDetails() {
                     <h1>About The Role</h1>
 
                 </div>
-                <div style={{ fontWeight: 10, paddingTop: 10 }}>
+                <div style={{ fontWeight: 10, paddingTop: 10, maxWidth:800 }}>
                     We are looking for PHP Developers to work on our flagship product. We strive for perfection and use the latest tools and technologies in a challenging business environment.
 
                     If you are passionate about professional excellence and have top-notch programming skills, we would like to talk to you about some fabulous opportunities.

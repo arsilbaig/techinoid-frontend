@@ -5,52 +5,44 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function ContactForm() {
-  const [userData , setUserData] = useState({
-    name:"",
-    email:"",
-    subject:"",
-    description:""
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    description: ""
   });
-
 
   const dataHandler = (e) => {
     let name = e.target.name;
     let value = e.target.value;
-   setUserData({
-    ...userData, 
-    [name] : value
-   })
-  }
- const [loader, setLoading] = useState(false);
-
-  const onSubmit = async(e) => {
-    
-    setLoading(true)
-    console.log(userData)
-   await axios.post('http://localhost:3001/contact/create', userData)
-    .then(response => console.log(response, "data added successfully"),
-    setLoading(false),
-    
-    toast.success('Success Notification !', {
-      position: toast.POSITION.TOP_RIGHT,
-       autoClose: 7000 
-  }),
-    
-    )
-    .catch(error => {
-      setLoading(false)
-      toast.error(error, {
-        position: toast.POSITION.TOP_RIGHT,
-         autoClose: 7000 
+    setUserData({
+      ...userData,
+      [name]: value
     })
-        this.setState({ errorMessage: error.message });
-        console.error('There was an error!', error);
-    });
+  }
 
-   
-   
-    }
-  
+  const onSubmit = async () => {
+    console.log(userData)
+    const res = await axios.post('http://localhost:3001/contact/create', userData)
+      .then(response => {
+        if (response) {
+          console.log(response, "ppp")
+        }
+        toast.success("success", {
+          position: toast.POSITION.TOP_RIGHT,
+          autoClose: 7000
+        })
+      })
+      .catch(error => {
+        toast.error(error.message, {
+          position: toast.POSITION.TOP_RIGHT,
+          autoClose: 7000
+        })
+        // this.setState({ errorMessage: error.message });
+        console.error('There was an error!', error);
+      })
+  }
+
 
   return (
     <>
@@ -79,8 +71,8 @@ function ContactForm() {
                       />
                     </div>
                     <div className="col-xl-6">
-                      <input type="text" name="subject" placeholder="Subject"   onChange={dataHandler} />
-                    
+                      <input type="text" name="subject" placeholder="Subject" onChange={dataHandler} />
+
                     </div>
                     <div className="col-12">
                       <textarea
@@ -89,11 +81,11 @@ function ContactForm() {
                         rows={10}
                         placeholder="Your message"
                         defaultValue={""}
-                        onChange={ dataHandler}
+                        onChange={dataHandler}
                       />
                     </div>
                     <div className="col-12">
-                      <input type="submit" defaultValue="Send Message"  onClick={onSubmit} loading={loader}/>
+                      <input type="button" defaultValue="Send Message" onClick={onSubmit} style={{ backgroundColor: "skyblue", color: "white" }} />
                     </div>
                   </div>
                 </form>
@@ -111,7 +103,7 @@ function ContactForm() {
             </div>
           </div>
         </div>
-        <ToastContainer />
+        <ToastContainer autoClose={5000} />
       </div>
     </>
   );
