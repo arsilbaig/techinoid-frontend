@@ -62,14 +62,14 @@ function Footer() {
               <div className="footer-widget">
                 <h4>Our Services</h4>
                 <ul className="footer-menu">
-                  <li>
+                  {/* <li>
                     <Link
                       onClick={scrollTop}
                       to={`${process.env.PUBLIC_URL}/service-details`}
                     >
                       Strategy &amp; Research
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       onClick={scrollTop}
@@ -86,14 +86,14 @@ function Footer() {
                       Web Solution
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       onClick={scrollTop}
                       to={`${process.env.PUBLIC_URL}/service-details`}
                     >
                       Digital Merketing
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       onClick={scrollTop}
