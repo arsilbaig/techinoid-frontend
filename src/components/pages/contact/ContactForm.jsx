@@ -25,21 +25,25 @@ function ContactForm() {
 
   const onSubmit = async () => {
     console.log(userData)
-   await axios.post('http://localhost:3001/contact/create', userData)
+    await axios.post('http://localhost:3001/contact/create', userData)
       .then(response => {
-
         toast.success("success", {
           position: toast.POSITION.TOP_RIGHT,
-          autoClose: 7000
+          autoClose: 5000
         })
-        
+        setTimeout(function(){
+          window.location.reload();
+       }, 5000);
       })
       .catch(error => {
         toast.error(error.message, {
           position: toast.POSITION.TOP_RIGHT,
-          autoClose: 7000
+          autoClose: 5000
         })
       })
+
+
+   
   }
 
 

@@ -58,56 +58,7 @@ function BlogPage() {
                   <BlogCart
                     blogsData={blogs}
                   />
-                  {/* <BlogCart
-                    tag="Software"
-                    postImg={process.env.PUBLIC_URL + "/images/post/post-2.jpg"}
-                    authorIMG={
-                      process.env.PUBLIC_URL + "/images/author/author-2.jpg"
-                    }
-                  /> */}
-                  {/* <BlogCart
-                    tag="UI/UX Design"
-                    postImg={process.env.PUBLIC_URL + "/images/post/post-3.jpg"}
-                    authorIMG={
-                      process.env.PUBLIC_URL + "/images/author/author-3.jpg"
-                    }
-                  />
-                  <BlogCart
-                    tag="Development"
-                    postImg={process.env.PUBLIC_URL + "/images/post/post-4.jpg"}
-                    authorIMG={
-                      process.env.PUBLIC_URL + "/images/author/author-4.jpg"
-                    }
-                  /> */}
-                  {/* <BlogCart
-                    tag="3D Design"
-                    postImg={process.env.PUBLIC_URL + "/images/post/post-5.jpg"}
-                    authorIMG={
-                      process.env.PUBLIC_URL + "/images/author/author-5.jpg"
-                    }
-                  />
-                  <BlogCart
-                    tag="Motion Graphi"
-                    postImg={process.env.PUBLIC_URL + "/images/post/post-6.jpg"}
-                    authorIMG={
-                      process.env.PUBLIC_URL + "/images/author/author-1.jpg"
-                    }
-                  /> */}
-                  {/* <BlogCart
-                    tag="App Design"
-                    postImg={process.env.PUBLIC_URL + "/images/post/post-7.jpg"}
-                    authorIMG={
-                      process.env.PUBLIC_URL + "/images/author/author-7.jpg"
-                    }
-                  /> */}
-                  {/* <BlogCart
-                    tag="Graphic Design"
-                    postImg={process.env.PUBLIC_URL + "/images/post/post-8.jpg"}
-                    authorIMG={
-                      process.env.PUBLIC_URL + "/images/author/author-1.jpg"
-                    }
-                  /> */}
-                  <Pagination />
+       
                 </div>
               </div>
             </div>

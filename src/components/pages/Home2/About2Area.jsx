@@ -61,12 +61,12 @@ function About2Area() {
                     src={process.env.PUBLIC_URL + "/images/about-bottom.jpg"}
                     alt="images"
                   />
-                  <div className="about-top">
+                  {/* <div className="about-top">
                     <img
                       src={process.env.PUBLIC_URL + "/images/about-top.png"}
                       alt="images"
                     />
-                  </div>
+                  </div> */}
                   <div className="about-skills">
                     <div className="signle-skill">
                       <CircularProgressbar
