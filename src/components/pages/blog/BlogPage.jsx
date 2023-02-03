@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // blog component
 import Breadcrumb from "../../common/Breadcrumb";
 import BlogCart from "./BlogCart";
@@ -9,8 +9,34 @@ import PopularTag from "./PopularTag";
 import BannerWiget from "./BannerWiget";
 import Pagination from "../../common/Pagination";
 import LetsTalkArea from "../../common/LetsTalkArea";
+import axios from 'axios'
 
 function BlogPage() {
+
+  const [blogs ,setBlogs] = useState([]);
+
+  useEffect(() => {
+    getBlogsAPI();
+  }, [])
+  
+    const getBlogsAPI = async () => {
+     const data = await axios.get('http://localhost:3001/blogs')
+     setBlogs(data.data)
+
+      // .then(response =>{
+      //   setBlogs(response.blogs)
+      //   console.warn(response, "data get successfully ")
+      // })
+      // .catch(error => {
+      //     this.setState({ errorMessage: error.message });
+      //     console.error('There was an error!', error);
+      // });
+
+     
+
+    }
+    console.warn(blogs,"blogs")
+       
   return (
     <>
       <Breadcrumb pageName="Blog" />
@@ -30,20 +56,16 @@ function BlogPage() {
               <div className="col-md-6 col-lg-8 col-xl-8">
                 <div className="row g-4">
                   <BlogCart
-                    tag="Web Design"
-                    postImg={process.env.PUBLIC_URL + "/images/post/post-1.jpg"}
-                    authorIMG={
-                      process.env.PUBLIC_URL + "/images/author/author-1.jpg"
-                    }
+                    blogsData={blogs}
                   />
-                  <BlogCart
+                  {/* <BlogCart
                     tag="Software"
                     postImg={process.env.PUBLIC_URL + "/images/post/post-2.jpg"}
                     authorIMG={
                       process.env.PUBLIC_URL + "/images/author/author-2.jpg"
                     }
-                  />
-                  <BlogCart
+                  /> */}
+                  {/* <BlogCart
                     tag="UI/UX Design"
                     postImg={process.env.PUBLIC_URL + "/images/post/post-3.jpg"}
                     authorIMG={
@@ -56,8 +78,8 @@ function BlogPage() {
                     authorIMG={
                       process.env.PUBLIC_URL + "/images/author/author-4.jpg"
                     }
-                  />
-                  <BlogCart
+                  /> */}
+                  {/* <BlogCart
                     tag="3D Design"
                     postImg={process.env.PUBLIC_URL + "/images/post/post-5.jpg"}
                     authorIMG={
@@ -70,21 +92,21 @@ function BlogPage() {
                     authorIMG={
                       process.env.PUBLIC_URL + "/images/author/author-1.jpg"
                     }
-                  />
-                  <BlogCart
+                  /> */}
+                  {/* <BlogCart
                     tag="App Design"
                     postImg={process.env.PUBLIC_URL + "/images/post/post-7.jpg"}
                     authorIMG={
                       process.env.PUBLIC_URL + "/images/author/author-7.jpg"
                     }
-                  />
-                  <BlogCart
+                  /> */}
+                  {/* <BlogCart
                     tag="Graphic Design"
                     postImg={process.env.PUBLIC_URL + "/images/post/post-8.jpg"}
                     authorIMG={
                       process.env.PUBLIC_URL + "/images/author/author-1.jpg"
                     }
-                  />
+                  /> */}
                   <Pagination />
                 </div>
               </div>

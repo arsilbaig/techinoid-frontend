@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -12,6 +12,8 @@ function ContactForm() {
     description: ""
   });
 
+
+
   const dataHandler = (e) => {
     let name = e.target.name;
     let value = e.target.value;
@@ -23,23 +25,20 @@ function ContactForm() {
 
   const onSubmit = async () => {
     console.log(userData)
-    const res = await axios.post('http://localhost:3001/contact/create', userData)
+   await axios.post('http://localhost:3001/contact/create', userData)
       .then(response => {
-        if (response) {
-          console.log(response, "ppp")
-        }
+
         toast.success("success", {
           position: toast.POSITION.TOP_RIGHT,
           autoClose: 7000
         })
+        
       })
       .catch(error => {
         toast.error(error.message, {
           position: toast.POSITION.TOP_RIGHT,
           autoClose: 7000
         })
-        // this.setState({ errorMessage: error.message });
-        console.error('There was an error!', error);
       })
   }
 
@@ -85,7 +84,7 @@ function ContactForm() {
                       />
                     </div>
                     <div className="col-12">
-                      <input type="button" defaultValue="Send Message" onClick={onSubmit} style={{ backgroundColor: "skyblue", color: "white" }} />
+                      <input type="button" defaultValue="Submit" onClick={onSubmit} style={{ backgroundColor: "skyblue", color: "white" }} />
                     </div>
                   </div>
                 </form>
