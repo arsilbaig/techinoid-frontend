@@ -152,7 +152,7 @@ function Footer() {
                   <li>
                     <Link
                       onClick={scrollTop}
-                      to={`${process.env.PUBLIC_URL}/contact`}
+                      to={`${process.env.PUBLIC_URL}/careers`}
                     >
                       Career
                     </Link>
