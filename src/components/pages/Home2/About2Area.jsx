@@ -4,8 +4,8 @@ import "react-circular-progressbar/dist/styles.css";
 import CountUp from "react-countup";
 import { Link } from "react-router-dom";
 function About2Area() {
-  const Singlepercentage = 85;
-  const singleXmPercentage = 68;
+  const Singlepercentage = 95;
+  const singleXmPercentage = 85;
   const scrollTop = () => {
     window.scrollTo({
       top: 0,
@@ -42,11 +42,19 @@ function About2Area() {
                       />
                     </i>
                   </div>
-                  <div className="msn-content">
-                    <h5>Our Mission</h5>
-                    <p>
-                    o create innovative software solutions that simplify and improve the lives of our customers.
-                    </p>
+                  <div style={{ display: "flex", flexDirection: "column" }}>
+                    <div className="msn-content">
+                      <h5>Our Mission</h5>
+                      <p>
+                      create innovative software solutions that simplify and improve the lives of our customers.
+                      </p>
+                    </div>
+                    <div className="msn-content" style={{ paddingTop: 20 }}>
+                      <h5>Our Vision</h5>
+                      <p>
+                      create innovative software solutions that simplify and improve the lives of our customers.
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div className="cmn-btn">
@@ -58,7 +66,7 @@ function About2Area() {
               <div className="about-right">
                 <div className="group-images">
                   <img
-                    src={process.env.PUBLIC_URL + "/images/about-bottom.jpg"}
+                    src={process.env.PUBLIC_URL + "/images/m1.jpg"}
                     alt="images"
                   />
                   {/* <div className="about-top">
@@ -67,7 +75,7 @@ function About2Area() {
                       alt="images"
                     />
                   </div> */}
-                  <div className="about-skills">
+                  {/* <div className="about-skills">
                     <div className="signle-skill">
                       <CircularProgressbar
                         value={Singlepercentage}
@@ -91,7 +99,7 @@ function About2Area() {
                         <p>Developing</p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

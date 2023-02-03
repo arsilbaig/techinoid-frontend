@@ -16,10 +16,10 @@ function HomePage2(props) {
       <ServiceArea />
       <About2Area />
       <OurPartnerArea />
-      <PortfolioArea black="" />
+      {/* <PortfolioArea black="" /> */}
       <WhyChooseUsArea black="" light="dark" lable="progressbar-label" />
       {/* <TestimonialArea /> */}
-      <NewsLatterArea />
+      {/* <NewsLatterArea /> */}
       <LetsTalkArea />
     </>
   );

@@ -25,11 +25,7 @@ function AboutArea() {
                   <h2 className="mb-15">Direction with our company.</h2>
                 </div>
                 <p>
-                  Integer purus odio, placerat nec rhoncus in, ullamcorper nec
-                  dolor. Classe aptent taciti sociosqu ad litora torquent per
-                  conubia nostra, per inceptos himenaeos. Praesent nec neque at
-                  dolor venenatis consectetur eu quis ei Donec lacinia placerat
-                  felis non aliquam.Integer purus odio.
+                  Focus on providing quality software products or services that meet the needs and wants of your target customers.Build and maintain a strong, professional, and efficient team of software developers, designers, and support staff.
                 </p>
                 <div className="our-mission">
                   <div className="msn-icon">
@@ -43,24 +39,22 @@ function AboutArea() {
                       />
                     </i>
                   </div>
-                  <div style={{display :"flex", flexDirection:"column"}}>
-                  <div className="msn-content">
-                    <h5>Our Mission</h5>
-                    <p>
-                      Integer purus odio, placerat nec rhoni olor Class online
-                      and video.
-                    </p>
+                  <div style={{ display: "flex", flexDirection: "column" }}>
+                    <div className="msn-content">
+                      <h5>Our Mission</h5>
+                      <p>
+                      create innovative software solutions that simplify and improve the lives of our customers.
+                      </p>
+                    </div>
+                    <div className="msn-content" style={{ paddingTop: 20 }}>
+                      <h5>Our Vision</h5>
+                      <p>
+                      create innovative software solutions that simplify and improve the lives of our customers.
+                      </p>
+                    </div>
                   </div>
-                  <div className="msn-content" style={{paddingTop:20}}>
-                    <h5>Our Vision</h5>
-                    <p>
-                      Integer purus odio, placerat nec rhoni olor Class online
-                      and video.
-                    </p>
-                  </div>
-                  </div>
-                 
-               
+
+
                 </div>
                 <div className="cmn-btn">
                   <Link onClick={scrollTop} to={`${process.env.PUBLIC_URL}/about`}>About more</Link>

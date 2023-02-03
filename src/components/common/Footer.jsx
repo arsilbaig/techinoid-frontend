@@ -220,7 +220,7 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={scrollTop} to={"#"}>
+                    <Link onClick={scrollTop} to={"/careers"}>
                       Careers
                     </Link>
                   </li>
