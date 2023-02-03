@@ -43,13 +43,13 @@ function AboutArea() {
                     <div className="msn-content">
                       <h5>Our Mission</h5>
                       <p>
-                      create innovative software solutions that simplify and improve the lives of our customers.
+                      Create innovative software solutions that simplify and improve the lives of our customers.
                       </p>
                     </div>
                     <div className="msn-content" style={{ paddingTop: 20 }}>
                       <h5>Our Vision</h5>
                       <p>
-                      create innovative software solutions that simplify and improve the lives of our customers.
+                      Our vision is to create innovative technology solutions that simplify and improve people's lives.
                       </p>
                     </div>
                   </div>
