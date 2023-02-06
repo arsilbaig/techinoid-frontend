@@ -49,10 +49,10 @@ function BlogCart(props) {
                     <div className="news-content">
                       <div className="author">
                         <div className="author-pic">
-                          <img src={data.image} alt="blog images" />
+                          <img src="/images/ceo.jpg" alt="blog images" style={{color:"red"}} />
                         </div>
                         <div className="author-info">
-                          <h5>Posted by, Alen Jodge</h5>
+                          <h5>Posted by, Techinoid</h5>
                           <span>{new Date(data.publishedAt).toDateString()}</span>
                         </div>
                       </div>
