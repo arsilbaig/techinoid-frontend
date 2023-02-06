@@ -34,7 +34,7 @@ function BlogCart(props) {
                 <>
                   <div className="">
                     <div className="tag">
-                      <Link onClick={scrollTop} to={"/"}>
+                      <Link onClick={scrollTop} to={`${process.env.PUBLIC_URL}/blog-details/${data.id}`}>
                         {data.title}
                       </Link>
                     </div>
