@@ -46,10 +46,10 @@ function BlogPage() {
           <div className="blog-wrapper">
             <div className="row">
               <div className="col-md-6 col-lg-4 col-xl-4">
-                <SidebarSearch />
-                <ServiceList />
-                <NewsPost />
-                <PopularTag />
+                {/* <SidebarSearch /> */}
+                {/* <ServiceList /> */}
+                {/* <NewsPost /> */}
+                {/* <PopularTag /> */}
                 <BannerWiget />
               </div>
 
