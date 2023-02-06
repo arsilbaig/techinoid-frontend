@@ -18,13 +18,13 @@ function BlogDetailsPage() {
             <div className="row">
               <div className="col-12 col-lg-8 col-xl-8 or2">
                 <BlogDetailsWrapper />
-                <BlogDetailsComments />
+                {/* <BlogDetailsComments /> */}
               </div>
               <div className="col-12 col-lg-4 col-xl-4 or1">
-                <SidebarSearch />
-                <ServiceList />
-                <NewsPost />
-                <PopularTag />
+                {/* <SidebarSearch /> */}
+                {/* <ServiceList /> */}
+                {/* <NewsPost /> */}
+                {/* <PopularTag /> */}
                 <BannerWiget />
               </div>
             </div>

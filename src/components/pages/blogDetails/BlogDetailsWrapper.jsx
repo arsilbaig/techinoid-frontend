@@ -1,12 +1,25 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 
 function BlogDetailsWrapper() {
+  const param = useParams();
+ const [blogDetails, setBlogDetails] = useState({});
+
+   const getBlogDetail = async () => {
+       debugger
+    const data = await axios.get(`http://localhost:3001/blogs/${param.blogId}`)
+    setBlogDetails(data.data.blogs)
+   }
+  useEffect(() => {
+    getBlogDetail();
+  }, [])
+  console.log(blogDetails)
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <>
-      <div className="blog-details">
+      {/* <div className="blog-details">
         <div className="post-thumbnail">
           <img
             src={process.env.PUBLIC_URL + "/images/post/blog-list-3.jpg"}
@@ -153,8 +166,20 @@ function BlogDetailsWrapper() {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
+      </div> */}
+      <div className="blog-details" >
+      <div className="post-thumbnail">
+          <img
+            src={blogDetails?.image}
+            alt="blog images"
+          />
+        </div>
+        <h3>
+        {blogDetails?.title}
+        </h3>
+      <div  dangerouslySetInnerHTML={{__html: blogDetails?.content}}></div>
       </div>
     </>
   );

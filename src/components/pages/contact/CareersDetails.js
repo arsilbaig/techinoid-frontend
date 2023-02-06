@@ -20,7 +20,8 @@ export default function CareersDetails() {
         setJobDetails(data.data);
 
     }
- 
+
+  
 
     useEffect(() => {
         getJobDetailsById();
@@ -74,8 +75,7 @@ export default function CareersDetails() {
                         </div>
 
                         <div className='pt-4'>
-                            <Link to="/jobForm">
-
+                            <Link to= {`/jobForm/${jobDetails?.jobPosts?.id}`}>
                                 <Button variant="contained" sx={{
                                     padding: 2,
                                     borderRadius: 10,
@@ -105,6 +105,7 @@ export default function CareersDetails() {
                           
                         </ul>
                     </div>
+  
 
             </div>
 

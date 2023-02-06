@@ -147,7 +147,7 @@ function Root() {
             />
             <Route
               exact
-              path={`${process.env.PUBLIC_URL}/Blog-details`}
+              path={`${process.env.PUBLIC_URL}/Blog-details/:blogId`}
               component={BlogDetailsPage}
             />
             <Route
@@ -172,7 +172,7 @@ function Root() {
             />
              <Route
               exact
-              path={`${process.env.PUBLIC_URL}/jobForm`}
+              path={`${process.env.PUBLIC_URL}/jobForm/:jobId`}
               component={JobForm}
             />
           </Layout>

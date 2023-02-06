@@ -22,14 +22,15 @@ function BlogCart(props) {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
   return (
     <>
+     {props.blogsData.blogs?.map((data, key) =>
       <div className="col-12 col-lg-6 col-xl-6">
-
-        <div style={{ display: "flex", flexDirection: "column", columnGap:"10" }} className="signle-news">
+     
+        <div style={{ display: "flex", flexDirection: "column", alignContent: "space-between", justifyContent: "space-between"  }} className="signle-news">
 
           <Card >
             <CardContent>
 
-              {props.blogsData.blogs?.map((data, key) =>
+           
                 <>
                   <div className="">
                     <div className="tag">
@@ -40,7 +41,7 @@ function BlogCart(props) {
                     <div className="post-img">
                       <Link
                         onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/blog-details`}
+                        to={`${process.env.PUBLIC_URL}/blog-details/${data.id}`}
                       >
                         <img src={data.image} alt="blog images" />
                       </Link>
@@ -52,25 +53,25 @@ function BlogCart(props) {
                         </div>
                         <div className="author-info">
                           <h5>Posted by, Alen Jodge</h5>
-                          <span>05 January, 2022</span>
+                          <span>{new Date(data.publishedAt).toDateString()}</span>
                         </div>
                       </div>
                       <h3>
                         <Link
                           onClick={scrollTop}
-                          to={`${process.env.PUBLIC_URL}/blog-details`}
+                          to={`${process.env.PUBLIC_URL}/blog-details/${data.id}`}
                         >
-                          Donec a porttitor phari sod tellus Nunc quis erosn.
+                            {/* <div  dangerouslySetInnerHTML={{__html: data?.content}}></div> */}
                         </Link>
                       </h3>
-                      <p>
+                      {/* <p>
                         Aptent taciti sociosqu ad litora torquent pi himenaeos. Praesent
                         nec neque at dolor ti venenatis consectetur eu quis ex.
-                      </p>
+                      </p> */}
                       <div className="view-btn">
                         <Link
                           onClick={scrollTop}
-                          to={`${process.env.PUBLIC_URL}/blog-details`}
+                          to={`${process.env.PUBLIC_URL}/blog-details/${data.id}`}
                         >
                           View details
                         </Link>
@@ -79,15 +80,16 @@ function BlogCart(props) {
                   </div>
 
                 </>
-              )
-              }
+            
 
             </CardContent>
          
           </Card>
         </div>
+      
       </div>
-
+    )
+  }
     </>
   );
 }

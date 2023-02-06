@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Breadcrumb from '../../common/Breadcrumb'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
+import { useParams } from 'react-router-dom';
 
 
 export default function JobForm() {
-
+     const params  = useParams();
     const [jobFormDetails, setJobFormDetails] = useState({
         name: "",
         email: "",
@@ -14,7 +15,7 @@ export default function JobForm() {
         resume: ""
     });
 
-
+    const [title, setTitile] = useState({});
     const dataHandler = (e) => {
         setJobFormDetails({
             ...jobFormDetails,
@@ -22,8 +23,17 @@ export default function JobForm() {
         })
     }
 
+    const getTitleById = async () => {
+   const data = await axios.get(`http://localhost:3001/jobPost/${params.jobId}`)
+   setTitile(data.data.jobPosts)
+   console.log(data.data.jobPosts)
+    }
+    
+  useEffect(()=> {
+    getTitleById();
+  }, [])
+     
     const onSubmit = async () => {
-        console.log(jobFormDetails)
         await axios.post('http://localhost:3001/jobApply/create', jobFormDetails)
             .then(response => {
                 toast.success("Applied Successfully", {
@@ -62,7 +72,7 @@ export default function JobForm() {
             <Breadcrumb pageName="Job Form" />
             <div style={{ paddingTop: 32, paddingLeft: 50, paddingRight: 50, paddingBottom: 32 }}>
                 <div style={{ display: "flex", fontSize: 42, fontWeight: 600, justifyContent: "center", alignItems: "center" }}>
-                    <h1>You Are Applaying For This Position</h1>
+                    <h1>Applaying For {title?.title} Position</h1>
                 </div>
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
                     <div className="col-lg-6 col-xl-6">

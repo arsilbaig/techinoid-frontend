@@ -144,14 +144,14 @@ function Header() {
                     </NavLink>
                   </li> */}
 
-                  {/* <li>
+                  <li>
                     <NavLink
                       onClick={scrollTop}
                       to={`${process.env.PUBLIC_URL}/blog`}
                     >
                       {'blogs'}
                     </NavLink>
-                  </li> */}
+                  </li>
 
                   <li>
                     <NavLink

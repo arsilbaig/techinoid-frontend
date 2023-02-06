@@ -27,7 +27,7 @@ function ContactForm() {
     console.log(userData)
     await axios.post('http://localhost:3001/contact/create', userData)
       .then(response => {
-        toast.success("success", {
+        toast.success("Response Submitted", {
           position: toast.POSITION.TOP_RIGHT,
           autoClose: 5000
         })
