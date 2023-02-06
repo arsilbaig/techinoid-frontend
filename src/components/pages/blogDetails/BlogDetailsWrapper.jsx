@@ -7,7 +7,6 @@ function BlogDetailsWrapper() {
  const [blogDetails, setBlogDetails] = useState({});
 
    const getBlogDetail = async () => {
-       debugger
     const data = await axios.get(`http://localhost:3001/blogs/${param.blogId}`)
     setBlogDetails(data.data.blogs)
    }

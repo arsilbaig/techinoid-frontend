@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Data from "../data/Data";
 import { SRLWrapper } from "simple-react-lightbox";
+import axios from "axios";
 
 function CartFilter({ active, props }) {
   const [items, setItems] = useState(Data);
@@ -9,7 +10,7 @@ function CartFilter({ active, props }) {
     const updateItems = Data.filter((curentElemet) => {
       return curentElemet.category === catagoryItem;
     });
-    setItems(updateItems);
+    // setItems(updateItems);
   };
   const scrollTop = () => {
     window.scrollTo({
@@ -17,9 +18,25 @@ function CartFilter({ active, props }) {
       behavior: "smooth",
     });
   };
+
+   const [projects, setProjects] = useState([]);
+
+    const getAllProjects = async () => {
+      const data = await axios.get('http://localhost:3001/portfolios')
+      setProjects(data.data)
+      setItems(data.data.portfolios)
+    }
+
+    useEffect(() => {
+    
+      getAllProjects()
+       
+    }, [])
+
+  console.log(projects)
   return (
     <>
-      <div className="row">
+      {/* <div className="row">
         <div className="col-12">
           <div className="project-tab">
             <ul className="project-filter-tab">
@@ -38,12 +55,10 @@ function CartFilter({ active, props }) {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="row g-4 project-items-wrapper">
-        {items.map((element) => {
-          const { title, image, heading } = element;
-
-          return (
+        {projects.portfolios?.map((element) => 
+          
             <div
               key={element.id}
               className="col-md-6 col-lg-4 col-xl-4 project-single-item uiux"
@@ -51,27 +66,27 @@ function CartFilter({ active, props }) {
               <div className="single-portfolio">
                 <SRLWrapper>
                   <div className="portfolio-data">
-                    <a href={heading}>
-                      <img src={image} alt="images" />
+                    <a href={element.title}>
+                      <img src={element.image} alt="images" />
                     </a>
                   </div>
                   <div className="portfolio-inner">
-                    <span>{title}</span>
-                    <h4>{heading}</h4>
+                    <span>{element.title}</span>
+                    <h4>{new Date(element.createdAt).toDateString()}</h4>
                     <div className="portfolio-hover">
                       <Link
                         onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/project-details`}
+                        to={`${process.env.PUBLIC_URL}/project-details/${element.id}`}
                         className="case-btn"
                       >
                         Case Study
                       </Link>
 
-                      <a data-lightbox="image1" href={heading}>
+                      <a data-lightbox="image1" href={element.heading}>
                         <div className="isotop"></div>
                       </a>
 
-                      <a data-lightbox="image1" href={image}>
+                      <a data-lightbox="image1" href={element.image}>
                         <img
                           alt="images"
                           src={
@@ -85,8 +100,8 @@ function CartFilter({ active, props }) {
                 </SRLWrapper>
               </div>
             </div>
-          );
-        })}
+          )
+        }
       </div>
     </>
   );

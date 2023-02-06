@@ -18,7 +18,6 @@ const bull = (
 
 
 function BlogCart(props) {
-  debugger
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
   return (
     <>

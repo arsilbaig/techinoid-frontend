@@ -1,6 +1,24 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 function ProjectProcess() {
+
+  const params = useParams();
+  const [projectDetails, setProjectDetails] = useState({});
+
+  const getProjectById =  async () => {
+    debugger
+    const data = await axios.get(`http://localhost:3001/portfolios/${params.projectId}`)
+    setProjectDetails(data.data.portfolios)
+  }
+
+  useEffect(() => {
+    getProjectById();
+  }, [])
+
+  console.log(projectDetails)
+
   return (
     <>
       <div className="project-process">

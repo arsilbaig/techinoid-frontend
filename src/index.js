@@ -132,7 +132,7 @@ function Root() {
             />
             <Route
               exact
-              path={`${process.env.PUBLIC_URL}/project-details`}
+              path={`${process.env.PUBLIC_URL}/project-details/:projectId`}
               component={ProjectDetailsPage}
             />
             <Route
