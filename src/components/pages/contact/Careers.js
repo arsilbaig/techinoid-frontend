@@ -34,7 +34,7 @@ export default function Careers() {
                 </div>
                 {jobs.jobposts?.map((data, key) =>
                     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingBottom: 40, alignContent: "space-between", justifyContent: "space-between", paddingLeft: 100, paddingRight: 100, paddingBottom: 50 }} >
-                        <Card style={{ width: "100%", minWidth: "50%", maxWidth: "100%" }}>
+                        <Card style={{ width: "100%", minWidth: "50%", maxWidth: "100%", borderRadius:30 }}>
                             <CardContent>
                                 <div className="flex justify-between items-center" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                                     <div>
@@ -43,7 +43,7 @@ export default function Careers() {
                                         </Typography>
                                         <Typography >
 
-                                            {data.description} | {data.location} | {(new Date(data.posting_date)).toLocaleDateString()}| {data.job_type}
+                                            {data.department} | {data.location} | {(new Date(data.posting_date)).toLocaleDateString()}| {data.job_type} | {data.experience} | {(new Date(data.apply_before)).toLocaleDateString()}
                                         </Typography>
 
                                     </div>

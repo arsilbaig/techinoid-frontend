@@ -62,7 +62,7 @@ export default function JobForm() {
             <Breadcrumb pageName="Job Form" />
             <div style={{ paddingTop: 32, paddingLeft: 50, paddingRight: 50, paddingBottom: 32 }}>
                 <div style={{ display: "flex", fontSize: 42, fontWeight: 600, justifyContent: "center", alignItems: "center" }}>
-                    <h1>Kindly Fill This Info</h1>
+                    <h1>You Are Applaying For This Position</h1>
                 </div>
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
                     <div className="col-lg-6 col-xl-6">
@@ -86,7 +86,7 @@ export default function JobForm() {
                                         />
                                     </div>
                                     <div className="col-xl-6">
-                                        <input type="number" name="phone" placeholder="Enter Phone #"
+                                        <input type="text" name="phone" placeholder="Enter Phone #"
                                             onChange={dataHandler}
                                         />
 
