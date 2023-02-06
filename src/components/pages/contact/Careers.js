@@ -49,11 +49,12 @@ export default function Careers() {
                                     </div>
 
                                     <div>
-                                        <Link to={`/CareersDetails/${data.id}`} >
+                                        <Link to={`/CareersDetails/${data.id}`}>
                                             <Button variant="contained" sx={{
                                                 padding: 1.5,
                                                 borderRadius: 10,
-                                                fontWeight: 600
+                                                fontWeight: 600,
+                                                
                                             }}>View Job</Button>
                                         </Link>
                                     </div>
