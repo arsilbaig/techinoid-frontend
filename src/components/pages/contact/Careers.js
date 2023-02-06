@@ -54,6 +54,7 @@ export default function Careers() {
                                                 padding: 1.5,
                                                 borderRadius: 10,
                                                 fontWeight: 600,
+                                                background: "linear-gradient(90deg, #D90A2C 1.05%, #730000 100%)"
                                                 
                                             }}>View Job</Button>
                                         </Link>

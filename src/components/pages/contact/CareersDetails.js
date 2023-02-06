@@ -79,7 +79,8 @@ export default function CareersDetails() {
                                 <Button variant="contained" sx={{
                                     padding: 2,
                                     borderRadius: 10,
-                                    fontWeight: 500
+                                    fontWeight: 500,
+                                    background: "linear-gradient(90deg, #D90A2C 1.05%, #730000 100%)"
                                 }}>Apply</Button>
                             </Link>
                         </div>

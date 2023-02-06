@@ -88,7 +88,7 @@ function ContactForm() {
                       />
                     </div>
                     <div className="col-12">
-                      <input type="button" defaultValue="Submit" onClick={onSubmit} style={{ backgroundColor: "skyblue", color: "white" }} />
+                      <input type="button" defaultValue="Submit" onClick={onSubmit} style={{ background: "linear-gradient(90deg, #D90A2C 1.05%, #730000 100%)", color: "white" }} />
                     </div>
                   </div>
                 </form>

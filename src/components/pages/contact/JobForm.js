@@ -101,7 +101,7 @@ export default function JobForm() {
                                         />
 
                                     </div>
-                                    <div className="col-xl-6">
+                                    <div className="col-12">
                                         <input type="file" name="resume" placeholder="resume"
                                             onChange={e => getBase64(e.target.files[0])}
                                         />
@@ -111,7 +111,7 @@ export default function JobForm() {
                                     <div className="col-12">
                                         <input type="button" defaultValue="Submit"
                                             onClick={onSubmit}
-                                            style={{ backgroundColor: "skyblue", color: "white" }} />
+                                            style={{ background: "linear-gradient(90deg, #D90A2C 1.05%, #730000 100%)", color: "white" }} />
                                     </div>
 
                                 </div>
