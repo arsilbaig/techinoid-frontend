@@ -1,41 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
 function CryberSecurityWrapper() {
-    const scrollTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-    return (
-        <>
-            <section className="service-details sec-mar">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 col-lg-8 col-xl-8 or2">
-                            <div className="signle-service-details">
-                                <h3>
-                                    {/* <img
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  return (
+    <>
+      <section className="service-details sec-mar">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 col-lg-8 col-xl-8 or2">
+              <div className="signle-service-details">
+                <h3>
+                  {/* <img
                                         src={
                                             process.env.PUBLIC_URL +
                                             "/images/icons/service-details-icon.svg"
                                         }
                                         alt="images"
                                     /> */}
-                                   Cyber Security
-                                </h3>
-                                <p>
-                                    An ecommerce shopping cart is a virtual cart that stores the items a shopper wants to purchase. When the shopper is ready to checkout, they enter the necessary information, such as:
+                  Cyber Security
+                </h3>
+                <p>
+                  Cybersecurity refers to the practices and technologies used to protect computer systems, networks, and digital information from unauthorized access, theft, or damage. It encompasses a wide range of activities, including network security, application security, and information security.
 
-                                    Shipping address
-                                    Billing address
-                                    Payment method (credit card, PayPal, etc.)
-                                    Email address
-                                    Phone number
-                                    Coupon codes or discount codes, if applicable.
-                                    This information is used to process the order and complete the transaction. The details entered into the shopping cart help to ensure the accuracy of the order and provide a way for the seller to contact the shopper if necessary.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-xl-4 or1">
-                            {/* <div className="sidebar-search">
+                  The threats to cybersecurity are constantly evolving, and can come from various sources, such as hackers, malware, and phishing attacks. To counter these threats, organizations implement a combination of technical and administrative controls, such as firewalls, encryption, and user training.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4 col-xl-4 or1">
+              {/* <div className="sidebar-search">
                 <form
                   onSubmit={(e) => e.preventDefault()}
                   action="#"
@@ -51,7 +45,7 @@ function CryberSecurityWrapper() {
                   </button>
                 </form>
               </div> */}
-                            {/* <div className="sidebar-widget">
+              {/* <div className="sidebar-widget">
                 <h4>Services</h4>
                 <ul className="service-list">
                   <li>
@@ -158,96 +152,92 @@ function CryberSecurityWrapper() {
                   </li>
                 </ul>
               </div> */}
-                        </div>
+            </div>
+          </div>
+          <div className="single-service-work-process">
+            <h3>How We Work in our services</h3>
+            <div className="single-step">
+              <div className="row">
+                <div className="col-md-8 col-xl-8 or2">
+                  <div className="step">
+                    <div className="step-count">
+                      <span>01</span>
                     </div>
-                    <div className="single-service-work-process">
-                        <h3>How We Work in our services</h3>
-                        <div className="single-step">
-                            <div className="row">
-                                <div className="col-md-8 col-xl-8 or2">
-                                    <div className="step">
-                                        <div className="step-count">
-                                            <span>01</span>
-                                        </div>
-                                        <h4>Wireframe &amp; Design</h4>
-                                        <p>
-                                            An ecommerce shopping cart is a virtual cart that stores the items a shopper wants to purchase. When the shopper is ready to checkout, they enter the necessary information, such as:
+                    <h4>Wireframe &amp; Design</h4>
+                    <p>
+                      Create a comprehensive security plan that outlines the measures to be taken to protect the project from cyber attacks and data breaches.
 
-                                            Shipping address
-                                            Billing address
-                                            Payment method (credit card, PayPal, etc.)
-                                            Email address
-                                            Phone number
-                                            Coupon codes or discount codes, if applicable.
-                                            This information is used to process the order and complete the transaction. The details entered into the shopping cart help to ensure the accuracy of the order and provide a way for the seller to contact the shopper if necessary.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 col-xl-4 or1">
-                                    <div className="step-img">
-                                        <img
-                                            src={process.env.PUBLIC_URL + "/images/step-1.png"}
-                                            alt="images"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="single-step">
-                            <div className="row">
-                                <div className="col-md-4 col-xl-4">
-                                    <div className="step-img">
-                                        <img
-                                            src={process.env.PUBLIC_URL + "/images/step-2.jpg"}
-                                            alt="images"
-                                        />
-                                    </div>
-                                </div>
-                                <div className="col-md-8 col-xl-8">
-                                    <div className="step">
-                                        <div className="step-count">
-                                            <span>02</span>
-                                        </div>
-                                        <h4>Developing</h4>
-                                        <p>
-                                            The shopping cart system securely transmits the payment information to a payment processor for verification and authorization.
+                      Choose the appropriate technologies: Select the cybersecurity technologies that align with the project's requirements, such as firewalls, intrusion detection systems, and encryption.
 
-                                            The payment processor confirms the payment and sends a confirmation back to the shopping cart system.
-
-                                            The shopping cart system sends an order confirmation to the shopper and notifies the software house of the sale.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="single-step">
-                            <div className="row">
-                                <div className="col-md-8 col-xl-8 or2">
-                                    <div className="step">
-                                        <div className="step-count">
-                                            <span>03</span>
-                                        </div>
-                                        <h4>Checkup &amp; Launch</h4>
-                                        <p>
-                                        The software house fulfills the order by delivering the purchased products or services to the shopper.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 col-xl-4 or1">
-                                    <div className="step-img">
-                                        <img
-                                            src={process.env.PUBLIC_URL + "/images/step-3.jpg"}
-                                            alt="images"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                      Implement access controls: Implement user authentication and access controls to limit the access to sensitive information and systems to authorized users.
+                    </p>
+                  </div>
                 </div>
-            </section>
-        </>
-    );
+                <div className="col-md-4 col-xl-4 or1">
+                  <div className="step-img">
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/step-1.png"}
+                      alt="images"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="single-step">
+              <div className="row">
+                <div className="col-md-4 col-xl-4">
+                  <div className="step-img">
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/step-2.jpg"}
+                      alt="images"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-8 col-xl-8">
+                  <div className="step">
+                    <div className="step-count">
+                      <span>02</span>
+                    </div>
+                    <h4>Developing</h4>
+                    <p>
+                      Monitor and test security: Regularly monitor the project's systems and data for any signs of security threats and perform security tests to identify vulnerabilities.
+
+                      Train the users: Educate the project team and stakeholders about the importance of cybersecurity and how to detect and respond to security threats.
+
+                      Update security measures: Regularly update the cybersecurity measures to stay ahead of emerging threats and evolving technology.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="single-step">
+              <div className="row">
+                <div className="col-md-8 col-xl-8 or2">
+                  <div className="step">
+                    <div className="step-count">
+                      <span>03</span>
+                    </div>
+                    <h4>Checkup &amp; Launch</h4>
+                    <p>
+                      Develop an incident response plan: Create a plan to respond to security incidents, including the steps to be taken in the event of a breach, the roles and responsibilities of the team members, and the processes for reporting and documenting the incident.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-4 col-xl-4 or1">
+                  <div className="step-img">
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/step-3.jpg"}
+                      alt="images"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
 export default CryberSecurityWrapper;

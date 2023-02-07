@@ -1,41 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
 function OffShoreWrapper() {
-    const scrollTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-    return (
-        <>
-            <section className="service-details sec-mar">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 col-lg-8 col-xl-8 or2">
-                            <div className="signle-service-details">
-                                <h3>
-                                    {/* <img
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  return (
+    <>
+      <section className="service-details sec-mar">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 col-lg-8 col-xl-8 or2">
+              <div className="signle-service-details">
+                <h3>
+                  {/* <img
                                         src={
                                             process.env.PUBLIC_URL +
                                             "/images/icons/service-details-icon.svg"
                                         }
                                         alt="images"
                                     /> */}
-                                   Offshore Staffing
-                                </h3>
-                                <p>
-                                    An ecommerce shopping cart is a virtual cart that stores the items a shopper wants to purchase. When the shopper is ready to checkout, they enter the necessary information, such as:
-
-                                    Shipping address
-                                    Billing address
-                                    Payment method (credit card, PayPal, etc.)
-                                    Email address
-                                    Phone number
-                                    Coupon codes or discount codes, if applicable.
-                                    This information is used to process the order and complete the transaction. The details entered into the shopping cart help to ensure the accuracy of the order and provide a way for the seller to contact the shopper if necessary.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-xl-4 or1">
-                            {/* <div className="sidebar-search">
+                  Offshore Staffing
+                </h3>
+                <p>
+                  Offshore staffing refers to the practice of hiring employees for a company located in another country, typically for the purpose of reducing labor costs. This practice is often utilized by businesses in developed countries to take advantage of lower wages and less stringent labor regulations in developing countries. The employees in the foreign country work remotely or on-site, performing tasks such as customer service, data entry, and software development. Offshore staffing can present a number of challenges, including communication difficulties and cultural differences, but can also provide benefits such as increased flexibility and access to a larger pool of skilled workers.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4 col-xl-4 or1">
+              {/* <div className="sidebar-search">
                 <form
                   onSubmit={(e) => e.preventDefault()}
                   action="#"
@@ -51,7 +43,7 @@ function OffShoreWrapper() {
                   </button>
                 </form>
               </div> */}
-                            {/* <div className="sidebar-widget">
+              {/* <div className="sidebar-widget">
                 <h4>Services</h4>
                 <ul className="service-list">
                   <li>
@@ -158,96 +150,92 @@ function OffShoreWrapper() {
                   </li>
                 </ul>
               </div> */}
-                        </div>
+            </div>
+          </div>
+          <div className="single-service-work-process">
+            <h3>How We Work in our services</h3>
+            <div className="single-step">
+              <div className="row">
+                <div className="col-md-8 col-xl-8 or2">
+                  <div className="step">
+                    <div className="step-count">
+                      <span>01</span>
                     </div>
-                    <div className="single-service-work-process">
-                        <h3>How We Work in our services</h3>
-                        <div className="single-step">
-                            <div className="row">
-                                <div className="col-md-8 col-xl-8 or2">
-                                    <div className="step">
-                                        <div className="step-count">
-                                            <span>01</span>
-                                        </div>
-                                        <h4>Wireframe &amp; Design</h4>
-                                        <p>
-                                            An ecommerce shopping cart is a virtual cart that stores the items a shopper wants to purchase. When the shopper is ready to checkout, they enter the necessary information, such as:
+                    <h4>Wireframe &amp; Design</h4>
+                    <p>
+                      The first step is to assess the company's staffing needs and determine which tasks can be outsourced.
 
-                                            Shipping address
-                                            Billing address
-                                            Payment method (credit card, PayPal, etc.)
-                                            Email address
-                                            Phone number
-                                            Coupon codes or discount codes, if applicable.
-                                            This information is used to process the order and complete the transaction. The details entered into the shopping cart help to ensure the accuracy of the order and provide a way for the seller to contact the shopper if necessary.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 col-xl-4 or1">
-                                    <div className="step-img">
-                                        <img
-                                            src={process.env.PUBLIC_URL + "/images/step-1.png"}
-                                            alt="images"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="single-step">
-                            <div className="row">
-                                <div className="col-md-4 col-xl-4">
-                                    <div className="step-img">
-                                        <img
-                                            src={process.env.PUBLIC_URL + "/images/step-2.jpg"}
-                                            alt="images"
-                                        />
-                                    </div>
-                                </div>
-                                <div className="col-md-8 col-xl-8">
-                                    <div className="step">
-                                        <div className="step-count">
-                                            <span>02</span>
-                                        </div>
-                                        <h4>Developing</h4>
-                                        <p>
-                                            The shopping cart system securely transmits the payment information to a payment processor for verification and authorization.
+                      Finding a provider: The next step is to find a staffing provider or company that specializes in offshore staffing. The company should be reliable, offer competitive rates, and have a proven track record of delivering quality work.
 
-                                            The payment processor confirms the payment and sends a confirmation back to the shopping cart system.
+                      Negotiating the contract: Once a provider has been selected, the company should negotiate the terms of the contract, including the scope of work, payment terms, and any legal or regulatory requirements.
 
-                                            The shopping cart system sends an order confirmation to the shopper and notifies the software house of the sale.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="single-step">
-                            <div className="row">
-                                <div className="col-md-8 col-xl-8 or2">
-                                    <div className="step">
-                                        <div className="step-count">
-                                            <span>03</span>
-                                        </div>
-                                        <h4>Checkup &amp; Launch</h4>
-                                        <p>
-                                        The software house fulfills the order by delivering the purchased products or services to the shopper.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 col-xl-4 or1">
-                                    <div className="step-img">
-                                        <img
-                                            src={process.env.PUBLIC_URL + "/images/step-3.jpg"}
-                                            alt="images"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                      Establishing communication channels: Effective communication is key to the success of offshore staffing. The company should set up clear communication channels, such as regular conference calls, email, and instant messaging, to ensure that the offshore team is able to effectively communicate with the company.
+                    </p>
+                  </div>
                 </div>
-            </section>
-        </>
-    );
+                <div className="col-md-4 col-xl-4 or1">
+                  <div className="step-img">
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/step-1.png"}
+                      alt="images"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="single-step">
+              <div className="row">
+                <div className="col-md-4 col-xl-4">
+                  <div className="step-img">
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/step-2.jpg"}
+                      alt="images"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-8 col-xl-8">
+                  <div className="step">
+                    <div className="step-count">
+                      <span>02</span>
+                    </div>
+                    <h4>Developing</h4>
+                    <p>
+                      The offshore team may require training on the company's processes and systems. The company should provide the necessary training to ensure that the offshore team is able to deliver quality work.
+
+                      Monitoring progress: Regular monitoring is necessary to ensure that the offshore team is delivering work to the required standards. The company should establish a system for monitoring the offshore team's progress and addressing any issues that arise.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="single-step">
+              <div className="row">
+                <div className="col-md-8 col-xl-8 or2">
+                  <div className="step">
+                    <div className="step-count">
+                      <span>03</span>
+                    </div>
+                    <h4>Checkup &amp; Launch</h4>
+                    <p>
+                      Offshore staffing often involves working with people from different cultural backgrounds. The company should be aware of and prepared to manage any cultural differences that may arise.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-4 col-xl-4 or1">
+                  <div className="step-img">
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/step-3.jpg"}
+                      alt="images"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
 export default OffShoreWrapper;

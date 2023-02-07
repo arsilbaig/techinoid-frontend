@@ -22,15 +22,9 @@ function AIWrapper() {
                                     Artificial Intelligence
                                 </h3>
                                 <p>
-                                    An ecommerce shopping cart is a virtual cart that stores the items a shopper wants to purchase. When the shopper is ready to checkout, they enter the necessary information, such as:
+                                Artificial Intelligence (AI) refers to the development of computer systems that can perform tasks that typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation.
 
-                                    Shipping address
-                                    Billing address
-                                    Payment method (credit card, PayPal, etc.)
-                                    Email address
-                                    Phone number
-                                    Coupon codes or discount codes, if applicable.
-                                    This information is used to process the order and complete the transaction. The details entered into the shopping cart help to ensure the accuracy of the order and provide a way for the seller to contact the shopper if necessary.
+AI systems can be divided into two main categories: narrow AI and general AI. Narrow AI is designed to perform specific tasks and is used in a wide range of applications, such as recommendation systems, speech recognition, and fraud detection. General AI, on the other hand, is designed to perform any intellectual task that a human can.
                                 </p>
                             </div>
                         </div>
@@ -171,15 +165,13 @@ function AIWrapper() {
                                         </div>
                                         <h4>Wireframe &amp; Design</h4>
                                         <p>
-                                            An ecommerce shopping cart is a virtual cart that stores the items a shopper wants to purchase. When the shopper is ready to checkout, they enter the necessary information, such as:
+                                        Determine the specific use case for AI, such as improving customer service through chatbots or optimizing supply chain management through predictive analytics.
 
-                                            Shipping address
-                                            Billing address
-                                            Payment method (credit card, PayPal, etc.)
-                                            Email address
-                                            Phone number
-                                            Coupon codes or discount codes, if applicable.
-                                            This information is used to process the order and complete the transaction. The details entered into the shopping cart help to ensure the accuracy of the order and provide a way for the seller to contact the shopper if necessary.
+Conduct a feasibility study: Evaluate the potential benefits and limitations of AI for the identified use case, and determine if it is the right solution.
+
+Choose the appropriate AI technology: Select the AI techniques and tools that meet the requirements of the use case, such as machine learning, deep learning, or natural language processing.
+
+Prepare the data: Gather and prepare the data that will be used to train the AI model, and ensure the data is accurate, diverse, and relevant to the use case.
                                         </p>
                                     </div>
                                 </div>
@@ -210,11 +202,11 @@ function AIWrapper() {
                                         </div>
                                         <h4>Developing</h4>
                                         <p>
-                                            The shopping cart system securely transmits the payment information to a payment processor for verification and authorization.
+                                        Train the model: Use the prepared data to train the AI model using the chosen AI technology. This involves defining the parameters of the model, selecting the algorithms, and adjusting the model to improve its performance.
 
-                                            The payment processor confirms the payment and sends a confirmation back to the shopping cart system.
+Validate the model: Validate the performance of the AI model using test data, and fine-tune the model to improve its accuracy and reliability.
 
-                                            The shopping cart system sends an order confirmation to the shopper and notifies the software house of the sale.
+Deploy the model: Integrate the AI model into the existing systems and processes, and make it available for use by the stakeholders.
                                         </p>
                                     </div>
                                 </div>
@@ -229,7 +221,7 @@ function AIWrapper() {
                                         </div>
                                         <h4>Checkup &amp; Launch</h4>
                                         <p>
-                                        The software house fulfills the order by delivering the purchased products or services to the shopper.
+                                        Monitor and improve: Monitor the performance and usage of the AI model, and continue to refine and improve it based on feedback and new data.
                                         </p>
                                     </div>
                                 </div>

@@ -1,41 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
 function MobileAppDevelopmentWrapper() {
-    const scrollTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-    return (
-        <>
-            <section className="service-details sec-mar">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 col-lg-8 col-xl-8 or2">
-                            <div className="signle-service-details">
-                                <h3>
-                                    {/* <img
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  return (
+    <>
+      <section className="service-details sec-mar">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 col-lg-8 col-xl-8 or2">
+              <div className="signle-service-details">
+                <h3>
+                  {/* <img
                                         src={
                                             process.env.PUBLIC_URL +
                                             "/images/icons/service-details-icon.svg"
                                         }
                                         alt="images"
                                     /> */}
-                                Mobile App Development
-                                </h3>
-                                <p>
-                                    An ecommerce shopping cart is a virtual cart that stores the items a shopper wants to purchase. When the shopper is ready to checkout, they enter the necessary information, such as:
-
-                                    Shipping address
-                                    Billing address
-                                    Payment method (credit card, PayPal, etc.)
-                                    Email address
-                                    Phone number
-                                    Coupon codes or discount codes, if applicable.
-                                    This information is used to process the order and complete the transaction. The details entered into the shopping cart help to ensure the accuracy of the order and provide a way for the seller to contact the shopper if necessary.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 col-xl-4 or1">
-                            {/* <div className="sidebar-search">
+                  Mobile App Development
+                </h3>
+                <p>
+                  Mobile app development refers to the process of creating software applications that run on mobile devices, such as smartphones and tablets. The process involves designing, coding, testing, and deploying mobile apps to app stores or marketplaces. The goal of mobile app development is to create applications that are user-friendly, visually appealing, and provide value to users by solving a specific problem or meeting a need.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4 col-xl-4 or1">
+              {/* <div className="sidebar-search">
                 <form
                   onSubmit={(e) => e.preventDefault()}
                   action="#"
@@ -51,7 +43,7 @@ function MobileAppDevelopmentWrapper() {
                   </button>
                 </form>
               </div> */}
-                            {/* <div className="sidebar-widget">
+              {/* <div className="sidebar-widget">
                 <h4>Services</h4>
                 <ul className="service-list">
                   <li>
@@ -158,96 +150,94 @@ function MobileAppDevelopmentWrapper() {
                   </li>
                 </ul>
               </div> */}
-                        </div>
+            </div>
+          </div>
+          <div className="single-service-work-process">
+            <h3>How We Work in our services</h3>
+            <div className="single-step">
+              <div className="row">
+                <div className="col-md-8 col-xl-8 or2">
+                  <div className="step">
+                    <div className="step-count">
+                      <span>01</span>
                     </div>
-                    <div className="single-service-work-process">
-                        <h3>How We Work in our services</h3>
-                        <div className="single-step">
-                            <div className="row">
-                                <div className="col-md-8 col-xl-8 or2">
-                                    <div className="step">
-                                        <div className="step-count">
-                                            <span>01</span>
-                                        </div>
-                                        <h4>Wireframe &amp; Design</h4>
-                                        <p>
-                                            An ecommerce shopping cart is a virtual cart that stores the items a shopper wants to purchase. When the shopper is ready to checkout, they enter the necessary information, such as:
+                    <h4>Wireframe &amp; Design</h4>
+                    <p>
+                      Determine the idea and concept behind the app and validate it with market research and user feedback.
 
-                                            Shipping address
-                                            Billing address
-                                            Payment method (credit card, PayPal, etc.)
-                                            Email address
-                                            Phone number
-                                            Coupon codes or discount codes, if applicable.
-                                            This information is used to process the order and complete the transaction. The details entered into the shopping cart help to ensure the accuracy of the order and provide a way for the seller to contact the shopper if necessary.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 col-xl-4 or1">
-                                    <div className="step-img">
-                                        <img
-                                            src={process.env.PUBLIC_URL + "/images/step-1.png"}
-                                            alt="images"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="single-step">
-                            <div className="row">
-                                <div className="col-md-4 col-xl-4">
-                                    <div className="step-img">
-                                        <img
-                                            src={process.env.PUBLIC_URL + "/images/step-2.jpg"}
-                                            alt="images"
-                                        />
-                                    </div>
-                                </div>
-                                <div className="col-md-8 col-xl-8">
-                                    <div className="step">
-                                        <div className="step-count">
-                                            <span>02</span>
-                                        </div>
-                                        <h4>Developing</h4>
-                                        <p>
-                                            The shopping cart system securely transmits the payment information to a payment processor for verification and authorization.
+                      Requirements Gathering: Identify and document the features, functionality, and technical requirements of the app.
 
-                                            The payment processor confirms the payment and sends a confirmation back to the shopping cart system.
+                      Design: Create a visually appealing and user-friendly design for the app, including the interface and user experience.
 
-                                            The shopping cart system sends an order confirmation to the shopper and notifies the software house of the sale.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="single-step">
-                            <div className="row">
-                                <div className="col-md-8 col-xl-8 or2">
-                                    <div className="step">
-                                        <div className="step-count">
-                                            <span>03</span>
-                                        </div>
-                                        <h4>Checkup &amp; Launch</h4>
-                                        <p>
-                                        The software house fulfills the order by delivering the purchased products or services to the shopper.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 col-xl-4 or1">
-                                    <div className="step-img">
-                                        <img
-                                            src={process.env.PUBLIC_URL + "/images/step-3.jpg"}
-                                            alt="images"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                      Prototyping: Develop a working prototype of the app to demonstrate the concept and gather feedback from users.
+                    </p>
+                  </div>
                 </div>
-            </section>
-        </>
-    );
+                <div className="col-md-4 col-xl-4 or1">
+                  <div className="step-img">
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/step-1.png"}
+                      alt="images"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="single-step">
+              <div className="row">
+                <div className="col-md-4 col-xl-4">
+                  <div className="step-img">
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/step-2.jpg"}
+                      alt="images"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-8 col-xl-8">
+                  <div className="step">
+                    <div className="step-count">
+                      <span>02</span>
+                    </div>
+                    <h4>Developing</h4>
+                    <p>
+                      Write the code for the app, using programming languages and tools that are appropriate for the platform (e.g., iOS, Android, etc.).
+
+                      Testing: Conduct thorough testing of the app to ensure that it functions correctly and meets the technical and quality requirements.
+
+                      Deployment: Launch the app on the app stores (e.g., Apple App Store, Google Play Store) and make it available to users.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="single-step">
+              <div className="row">
+                <div className="col-md-8 col-xl-8 or2">
+                  <div className="step">
+                    <div className="step-count">
+                      <span>03</span>
+                    </div>
+                    <h4>Checkup &amp; Launch</h4>
+                    <p>
+                      Maintenance and Support: Continuously monitor and maintain the app to address any bugs, security issues, and user feedback, and to add new features and updates over time..
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-4 col-xl-4 or1">
+                  <div className="step-img">
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/step-3.jpg"}
+                      alt="images"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
 export default MobileAppDevelopmentWrapper;
