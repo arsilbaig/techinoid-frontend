@@ -7,18 +7,22 @@ import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import LoadingSpinner from '../../common/LoadingSpinner';
 
 export default function CareersDetails() {
 
     const params = useParams();
 
     const [jobDetails, setJobDetails] = useState([]);
-
+    const [isLoading, setIsLoading] = useState(false);
     const getJobDetailsById = async () => {
-        const data = await axios.get(`http://localhost:3001/jobPost/${params.userId}`);
-
-        setJobDetails(data.data);
-
+       await axios.get(`http://localhost:3001/jobPost/${params.userId}`).then((response) => {
+        setIsLoading(true);
+            setTimeout(() => {
+                setJobDetails(response.data);
+               setIsLoading(false);
+             }, 3000);
+           })
     }
 
   
@@ -30,6 +34,9 @@ export default function CareersDetails() {
     return (
         <>
             <Breadcrumb pageName="Job Detail" />
+            {isLoading ? <LoadingSpinner/> 
+            :
+          
 
             <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between", flexFlow:"row wrap"}}>
                     <div style={{ paddingTop: 32, paddingLeft: 100, paddingRight: 50, paddingBottom: 32 }}>
@@ -109,6 +116,7 @@ export default function CareersDetails() {
   
 
             </div>
+              }
 
         </>
 

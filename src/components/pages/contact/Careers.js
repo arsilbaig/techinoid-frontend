@@ -8,16 +8,23 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import LoadingSpinner from '../../common/LoadingSpinner';
 
 
 export default function Careers() {
     const [jobs, setJobs] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
+
     const getJobsData = async () => {
-        const getJobs = await axios.get('http://localhost:3001/jobpost')
-        setJobs(getJobs.data)
+        setIsLoading(true);
+         await axios.get('http://localhost:3001/jobpost').then((response) => {
+      setTimeout(() => {
+        setJobs(response.data)
+       setIsLoading(false);
+     }, 3000);
+   })
+        
     }
-
-
 
     useEffect(() => {
         getJobsData();
@@ -26,6 +33,7 @@ export default function Careers() {
     return (
         <>
             <Breadcrumb pageName="Careers" />
+            {isLoading ? <LoadingSpinner/> :
             <div>
                 <div style={{ display: "flex", fontSize: 42, fontWeight: 600, justifyContent: "center", alignItems: "center", paddingBottom: 50, paddingTop: 50 }}>
                     <h1>
@@ -65,6 +73,7 @@ export default function Careers() {
                     </div>
                 )}
             </div>
+             }
 
         </>
     )

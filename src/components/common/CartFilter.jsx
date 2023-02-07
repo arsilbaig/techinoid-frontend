@@ -3,9 +3,14 @@ import { Link } from "react-router-dom";
 import Data from "../data/Data";
 import { SRLWrapper } from "simple-react-lightbox";
 import axios from "axios";
+import LoadingSpinner from "./LoadingSpinner";
 
 function CartFilter({ active, props }) {
   const [items, setItems] = useState(Data);
+  const [isLoading, setIsLoading] = useState(false);
+
+
+
   const filterItem = (catagoryItem) => {
     const updateItems = Data.filter((curentElemet) => {
       return curentElemet.category === catagoryItem;
@@ -19,21 +24,45 @@ function CartFilter({ active, props }) {
     });
   };
 
-   const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState([]);
 
-    const getAllProjects = async () => {
-      const data = await axios.get('http://localhost:3001/portfolios')
-      setProjects(data.data)
-      setItems(data.data.portfolios)
-    }
+  // const handleFetch = () => {
+  //   setIsLoading(true);
+  //   fetch("https://reqres.in/api/users?page=0")
+  //     .then((respose) => respose.json())
+  //     .then((respose) => {
+  //        setUsers(respose.data)
+  //        setIsLoading(false)
+  //        // Optional code to simulate delay
+  //        // setTimeout(() => {
+  //        //   setUsers(respose.data);
+  //        //   setIsLoading(false);
+  //        // }, 3000);
+  //     })
+  //     .catch(() => {
+  //        setErrorMessage("Unable to fetch user list");
+  //        setIsLoading(false);
+  //     });
+  // };
 
-    useEffect(() => {
-    
-      getAllProjects()
-       
-    }, [])
+  const getAllProjects = async () => {
+    setIsLoading(true);
+    await axios.get('http://localhost:3001/portfolios').then((respose) => {    
+         setTimeout(() => {
+          setProjects(respose.data)
+          setItems(respose.data.portfolios)
+           setIsLoading(false);
+         }, 2000);
+      })
+  }
 
-  console.log(projects)
+  useEffect(() => {
+
+    getAllProjects()
+ 
+
+  }, [])
+
   return (
     <>
       {/* <div className="row">
@@ -56,9 +85,14 @@ function CartFilter({ active, props }) {
           </div>
         </div>
       </div> */}
-      <div className="row g-4 project-items-wrapper">
-        {projects.portfolios?.map((element) => 
-          
+      {isLoading ? <LoadingSpinner />
+
+
+        :
+
+        <div className="row g-4 project-items-wrapper">
+          {projects.portfolios?.map((element) =>
+
             <div
               key={element.id}
               className="col-md-6 col-lg-4 col-xl-4 project-single-item uiux"
@@ -101,8 +135,9 @@ function CartFilter({ active, props }) {
               </div>
             </div>
           )
-        }
-      </div>
+          }
+        </div>
+      }
     </>
   );
 }

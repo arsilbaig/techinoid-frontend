@@ -10,7 +10,7 @@ function ProjectDetailsPage() {
       <div className="project-details-area sec-mar">
         <div className="container">
           <ProjectProcess />
-          <ReletedProject />
+          {/* <ReletedProject /> */}
         </div>
       </div>
     </>

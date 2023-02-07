@@ -1,19 +1,27 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import LoadingSpinners from "../../common/LoadingSpinner";
 
 function BlogDetailsWrapper() {
   const param = useParams();
  const [blogDetails, setBlogDetails] = useState({});
+ const [isLoading, setIsLoading] = useState(false);
 
    const getBlogDetail = async () => {
-    const data = await axios.get(`http://localhost:3001/blogs/${param.blogId}`)
-    setBlogDetails(data.data.blogs)
+    setIsLoading(true);
+       await axios.get(`http://localhost:3001/blogs/${param.blogId}`).then((respose) => {    
+         setTimeout(() => {
+          setBlogDetails(respose.data.blogs)
+           setIsLoading(false);
+         }, 3000);
+      })
    }
   useEffect(() => {
     getBlogDetail();
   }, [])
-  console.log(blogDetails)
+
+
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
@@ -168,6 +176,9 @@ function BlogDetailsWrapper() {
           </div> 
         </div>
       </div> */}
+
+      {isLoading ?  <LoadingSpinners/>
+      : 
       <div className="blog-details" >
       <div className="post-thumbnail">
           <img
@@ -180,6 +191,7 @@ function BlogDetailsWrapper() {
         </h3>
       <div  dangerouslySetInnerHTML={{__html: blogDetails?.content}}></div>
       </div>
+       }
     </>
   );
 }

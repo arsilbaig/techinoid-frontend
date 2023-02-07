@@ -10,18 +10,26 @@ import BannerWiget from "./BannerWiget";
 import Pagination from "../../common/Pagination";
 import LetsTalkArea from "../../common/LetsTalkArea";
 import axios from 'axios'
+import LoadingSpinner from "../../common/LoadingSpinner";
 
 function BlogPage() {
 
   const [blogs ,setBlogs] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     getBlogsAPI();
   }, [])
   
     const getBlogsAPI = async () => {
-     const data = await axios.get('http://localhost:3001/blogs')
-     setBlogs(data.data)
+      setIsLoading(true);
+     await axios.get('http://localhost:3001/blogs').then((response) => {
+      setTimeout(() => {
+        setBlogs(response.data)
+         setIsLoading(false);
+       }, 3000);
+     })
+    
 
       // .then(response =>{
       //   setBlogs(response.blogs)
@@ -40,7 +48,8 @@ function BlogPage() {
   return (
     <>
       <Breadcrumb pageName="Blog" />
-
+     {isLoading ? <LoadingSpinner/> :
+    
       <div className="blog-news sec-mar">
         <div className="container">
           <div className="blog-wrapper">
@@ -65,6 +74,8 @@ function BlogPage() {
           </div>
         </div>
       </div>
+       }
+       
       <LetsTalkArea />
     </>
   );
