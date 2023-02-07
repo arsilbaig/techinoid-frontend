@@ -10,46 +10,43 @@ function OurPartnerArea() {
 
 
   const [getInTouch, setGetInTouch] = useState({
-    email:""
+    email: ""
   })
 
   const dataHandler = (e) => {
     setGetInTouch({
-        ...getInTouch,
-        [e.target.name]: e.target.value
+      ...getInTouch,
+      [e.target.name]: e.target.value
     })
-}
+  }
 
-const onSubmit = async () => {
-  await axios.post(`${process.env.REACT_APP_API_BASE_URL}/connect/create`, getInTouch)
+  const onSubmit = async () => {
+    await axios.post(`${process.env.REACT_APP_API_BASE_URL}/connect/create`, getInTouch)
       .then(response => {
-          toast.success("Connected", {
-              position: toast.POSITION.TOP_RIGHT,
-              autoClose: 5000
-          })
-      
-   
-
-          setTimeout(function () {
-              window.location.reload();
-          }, 5000);
+        toast.success("Connected", {
+          position: toast.POSITION.TOP_RIGHT,
+          autoClose: 5000
+        })
+        setTimeout(function () {
+          window.location.reload();
+        }, 5000);
       })
       .catch(error => {
-          toast.error(error.message, {
-              position: toast.POSITION.TOP_RIGHT,
-              autoClose: 5000
-          })
-      
+        toast.error(error.message, {
+          position: toast.POSITION.TOP_RIGHT,
+          autoClose: 5000
+        })
+
       })
 
 
-}
+  }
 
-  
+
 
   return (
     <>
-      <section className="our-partner" style={{paddingTop:10}}>
+      <section className="our-partner" style={{ paddingTop: 10 }}>
         <div className="container-fluid g-0 overflow-hidden">
           <div className="row align-items-center g-0">
             <div className="col-12 col-xl-6">
@@ -71,7 +68,7 @@ const onSubmit = async () => {
                         placeholder="Type Your Email"
                         onChange={dataHandler}
                       />
-                      <input type="submit" defaultValue="Connect" onClick={onSubmit}/>
+                      <input type="submit" defaultValue="Connect" onClick={onSubmit} />
                     </form>
                   </div>
                 </div>
@@ -80,7 +77,7 @@ const onSubmit = async () => {
             <div className="col-12 col-xl-6">
               <div className="our-clients">
                 <div className="row align-items-center">
-                  <div className="col-md-6 col-lg-4 col-xl-6" style={{paddingTop:85, paddingBottom:85}}>
+                  <div className="col-md-6 col-lg-4 col-xl-6" style={{ paddingTop: 85, paddingBottom: 85 }}>
                     <div className="title" >
                       <h2>Join our Techinoid community.</h2>
                     </div>
