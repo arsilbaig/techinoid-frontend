@@ -133,7 +133,7 @@ function Footer() {
                       Services
                     </Link>
                   </li>
-                  {/* <li>
+                  <li>
                     <Link
                       onClick={scrollTop}
                       to={`${process.env.PUBLIC_URL}/project`}
@@ -148,7 +148,7 @@ function Footer() {
                     >
                       Blog
                     </Link>
-                  </li> */}
+                  </li>
                   <li>
                     <Link
                       onClick={scrollTop}
