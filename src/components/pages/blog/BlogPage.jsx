@@ -23,7 +23,7 @@ function BlogPage() {
   
     const getBlogsAPI = async () => {
       setIsLoading(true);
-     await axios.get('http://localhost:3001/blogs').then((response) => {
+     await axios.get(`${process.env.REACT_APP_API_BASE_URL}/blogs`).then((response) => {
       setTimeout(() => {
         setBlogs(response.data)
          setIsLoading(false);

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import LoadingSpinner from "../../common/LoadingSpinner";
 
 function ContactForm() {
   const [userData, setUserData] = useState({
@@ -12,7 +13,7 @@ function ContactForm() {
     description: ""
   });
 
-
+  const [isLoading, setIsLoading] = useState(true);
 
   const dataHandler = (e) => {
     let name = e.target.name;
@@ -25,15 +26,15 @@ function ContactForm() {
 
   const onSubmit = async () => {
     console.log(userData)
-    await axios.post('http://localhost:3001/contact/create', userData)
+    await axios.post(`${process.env.REACT_APP_API_BASE_URL}/contact/create`, userData)
       .then(response => {
         toast.success("Response Submitted", {
           position: toast.POSITION.TOP_RIGHT,
           autoClose: 5000
         })
-        setTimeout(function(){
+        setTimeout(function () {
           window.location.reload();
-       }, 5000);
+        }, 5000);
       })
       .catch(error => {
         toast.error(error.message, {
@@ -43,9 +44,14 @@ function ContactForm() {
       })
 
 
-   
-  }
 
+
+  }
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 5000);
+  }, [])
 
   return (
     <>
@@ -94,16 +100,25 @@ function ContactForm() {
                 </form>
               </div>
             </div>
+
             <div className="col-lg-6 col-xl-6">
-              <div className="google-map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.348018663377!2d74.3426116149667!3d31.51460018137157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190573d80f41bd%3A0x2e5c341b610ea82!2sAl%20Hafeez%20Heights!5e0!3m2!1sen!2s!4v1675344724206!5m2!1sen!2s"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                />
-              </div>
+              {isLoading ?
+                <div >
+                  <LoadingSpinner />
+                </div>
+                :
+                <div className="google-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.348018663377!2d74.3426116149667!3d31.51460018137157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190573d80f41bd%3A0x2e5c341b610ea82!2sAl%20Hafeez%20Heights!5e0!3m2!1sen!2s!4v1675344724206!5m2!1sen!2s"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                  />
+                </div>
+
+              }
             </div>
+
           </div>
         </div>
         <ToastContainer autoClose={5000} />

@@ -47,7 +47,7 @@ function CartFilter({ active, props }) {
 
   const getAllProjects = async () => {
     setIsLoading(true);
-    await axios.get('http://localhost:3001/portfolios').then((respose) => {    
+    await axios.get(`${process.env.REACT_APP_API_BASE_URL}/portfolios`).then((respose) => {    
          setTimeout(() => {
           setProjects(respose.data)
           setItems(respose.data.portfolios)

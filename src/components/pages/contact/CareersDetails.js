@@ -17,7 +17,7 @@ export default function CareersDetails() {
     const [isLoading, setIsLoading] = useState(false);
     const getJobDetailsById = async () => {
         setIsLoading(true);
-        await axios.get(`http://localhost:3001/jobPost/${params.userId}`).then((response) => {
+        await axios.get(`${process.env.REACT_APP_API_BASE_URL}/jobPost/${params.userId}`).then((response) => {
 
             setTimeout(() => {
                 setJobDetails(response.data);

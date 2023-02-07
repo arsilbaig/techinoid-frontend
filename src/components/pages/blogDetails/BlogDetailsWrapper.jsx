@@ -10,7 +10,7 @@ function BlogDetailsWrapper() {
 
    const getBlogDetail = async () => {
     setIsLoading(true);
-       await axios.get(`http://localhost:3001/blogs/${param.blogId}`).then((respose) => {    
+       await axios.get(`${process.env.REACT_APP_API_BASE_URL}/blogs/${param.blogId}`).then((respose) => {    
          setTimeout(() => {
           setBlogDetails(respose.data.blogs)
            setIsLoading(false);

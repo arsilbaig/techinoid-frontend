@@ -1,5 +1,52 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 function OurPartnerArea() {
+
+
+
+  const [getInTouch, setGetInTouch] = useState({
+    email:""
+  })
+
+  const dataHandler = (e) => {
+    setGetInTouch({
+        ...getInTouch,
+        [e.target.name]: e.target.value
+    })
+}
+
+const onSubmit = async () => {
+  await axios.post(`${process.env.REACT_APP_API_BASE_URL}/connect/create`, getInTouch)
+      .then(response => {
+          toast.success("Connected", {
+              position: toast.POSITION.TOP_RIGHT,
+              autoClose: 5000
+          })
+      
+   
+
+          setTimeout(function () {
+              window.location.reload();
+          }, 5000);
+      })
+      .catch(error => {
+          toast.error(error.message, {
+              position: toast.POSITION.TOP_RIGHT,
+              autoClose: 5000
+          })
+      
+      })
+
+
+}
+
+  
+
   return (
     <>
       <section className="our-partner" style={{paddingTop:10}}>
@@ -22,8 +69,9 @@ function OurPartnerArea() {
                         type="email"
                         name="email"
                         placeholder="Type Your Email"
+                        onChange={dataHandler}
                       />
-                      <input type="submit" defaultValue="Connect" />
+                      <input type="submit" defaultValue="Connect" onClick={onSubmit}/>
                     </form>
                   </div>
                 </div>
@@ -183,6 +231,7 @@ function OurPartnerArea() {
           </div>
         </div>
       </section>
+      <ToastContainer autoClose={5000} />
     </>
   );
 }

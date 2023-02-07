@@ -24,7 +24,7 @@ export default function JobForm() {
     }
 
     const getTitleById = async () => {
-   const data = await axios.get(`http://localhost:3001/jobPost/${params.jobId}`)
+   const data = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/jobPost/${params.jobId}`)
    setTitile(data.data.jobPosts)
    console.log(data.data.jobPosts)
     }
@@ -34,7 +34,7 @@ export default function JobForm() {
   }, [])
      
     const onSubmit = async () => {
-        await axios.post('http://localhost:3001/jobApply/create', jobFormDetails)
+        await axios.post(`${process.env.REACT_APP_API_BASE_URL}/jobApply/create`, jobFormDetails)
             .then(response => {
                 toast.success("Applied Successfully", {
                     position: toast.POSITION.TOP_RIGHT,

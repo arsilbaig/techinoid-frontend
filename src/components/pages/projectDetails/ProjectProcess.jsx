@@ -11,7 +11,7 @@ function ProjectProcess() {
 
   const getProjectById =  async () => {
     setIsLoading(true);
-   await axios.get(`http://localhost:3001/portfolios/${params.projectId}`).then((response) => {
+   await axios.get(`${process.env.REACT_APP_API_BASE_URL}/portfolios/${params.projectId}`).then((response) => {
     setTimeout(() => {
       setProjectDetails(response.data.portfolios)
        setIsLoading(false);

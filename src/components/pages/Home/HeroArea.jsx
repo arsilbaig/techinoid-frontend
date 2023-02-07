@@ -62,7 +62,7 @@ function HeroArea() {
                           />
                         </div>
                         <div className="hero-content">
-                          <h2>Creative</h2>
+                          <h2>Techinoid</h2>
                           <h1>
                           Cryptocurrency  
                           </h1>
@@ -110,7 +110,7 @@ function HeroArea() {
                           />
                         </div>
                         <div className="hero-content">
-                          <h2>Creative</h2>
+                          <h2>Techinoid</h2>
                           <h1>
                           Health care 
                           </h1>
@@ -159,7 +159,7 @@ function HeroArea() {
                           />
                         </div>
                         <div className="hero-content">
-                          <h2>Creative</h2>
+                          <h2>Techinoid</h2>
                           <h1>
                             Best solution for your <span>Finance</span>
                           </h1>
