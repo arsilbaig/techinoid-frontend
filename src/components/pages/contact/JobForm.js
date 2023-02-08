@@ -12,7 +12,8 @@ export default function JobForm() {
         name: "",
         email: "",
         phone: "",
-        resume: ""
+        resume: "",
+        jobPostid : params.jobId
     });
 
     const [title, setTitile] = useState({});
@@ -22,6 +23,16 @@ export default function JobForm() {
             [e.target.name]: e.target.value
         })
     }
+
+    const imageHandler = (e) => {
+        let formData = new FormData(); 
+        formData.append('file',e.target.files[0]);
+        setJobFormDetails({
+            ...jobFormDetails,
+            [e.target.name]: formData
+        })
+    }
+
 
     const getTitleById = async () => {
    const data = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/jobPost/${params.jobId}`)
@@ -34,7 +45,15 @@ export default function JobForm() {
   }, [])
      
     const onSubmit = async () => {
-        await axios.post(`${process.env.REACT_APP_API_BASE_URL}/jobApply/create`, jobFormDetails)
+        let jName=jobFormDetails.name
+        let mail = jobFormDetails.email
+        let jPhone = jobFormDetails.phone
+        let jjobPostid = jobFormDetails.jobPostid
+        let jresume = jobFormDetails.resume
+        // let formData = new FormData(); 
+        // formData.append('resume',jresume);
+       
+        await axios.post(`${process.env.REACT_APP_API_BASE_URL}/jobApply/create?name=${jName}&email=${mail}&phone=${jPhone}&jobPostid=${jjobPostid}`,  jobFormDetails.resume)
             .then(response => {
                 toast.success("Applied Successfully", {
                     position: toast.POSITION.TOP_RIGHT,
@@ -54,18 +73,18 @@ export default function JobForm() {
     }
 
 
-    function getBase64(file) {
-        var reader = new FileReader();
-        reader.readAsDataURL(file);
-        reader.onload = function () {
-            console.log(reader.result);
-            jobFormDetails.resume = reader.result
-        };
+    // function getBase64(file) {
+    //     var reader = new FileReader();
+    //     reader.readAsDataURL(file);
+    //     reader.onload = function () {
+    //         console.log(reader.result);
+    //         jobFormDetails.resume = reader.result
+    //     };
 
-        reader.onerror = function (error) {
-            console.log('Error: ', error);
-        };
-    }
+    //     reader.onerror = function (error) {
+    //         console.log('Error: ', error);
+    //     };
+    // }
 
     return (
         <>
@@ -103,7 +122,8 @@ export default function JobForm() {
                                     </div>
                                     <div className="col-12">
                                         <input type="file" name="resume" placeholder="resume"
-                                            onChange={e => getBase64(e.target.files[0])}
+                                        accept="application/msword application/pdf" 
+                                            onChange={imageHandler}
                                         />
 
                                     </div>

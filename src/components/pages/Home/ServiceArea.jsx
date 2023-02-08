@@ -16,7 +16,7 @@ function ServiceArea() {
             <div className="col-md-12 col-lg-4 col-xl-4">
               <div className="title">
                 <span>what we do</span>
-                <h2>we work performed for client happy.</h2>
+                <h2>Our goal is to ensure customer satisfaction.</h2>
                 <div className="cmn-btn">
                   <Link
                     onClick={scrollTop}
