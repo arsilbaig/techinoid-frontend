@@ -37,7 +37,7 @@ export default function Careers() {
                 <div>
                     <div style={{ display: "flex", fontSize: 42, fontWeight: 600, justifyContent: "center", alignItems: "center", paddingBottom: 50, paddingTop: 50 }}>
                         <h1>
-                            Latest Openings
+                            Current Openings
                         </h1>
                     </div>
                     {jobs.jobposts?.map((data, key) =>

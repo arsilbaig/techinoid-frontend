@@ -32,6 +32,19 @@ function HeroArea() {
       behavior: "smooth",
     });
   };
+  
+  const reloadFb =()=> {
+    window.open("https://www.facebook.com/techinoidpk?mibextid=LQQJ4d")
+  }
+
+  const reloadInsta = () =>{
+    window.open("https://instagram.com/techinoid?igshid=Zjc2ZTc4Nzk=")
+  }
+
+  const reloadLinkdln = () =>{
+    window.open("https://www.linkedin.com/company/techinoid/")
+  }
+
   return (
     <>
       <section className="hero-area">
@@ -186,17 +199,17 @@ function HeroArea() {
         <div className="social-media">
           <ul className="social-list">
             <li>
-              <a rel="noopener noreferrer" href="https://www.facebook.com/">
+              <a rel="noopener noreferrer" onClick={reloadFb}>
                 Facebook
               </a>
             </li>
             <li>
-              <a rel="noopener noreferrer" href="https://www.instagram.com/">
+              <a rel="noopener noreferrer"  onClick={reloadInsta}>
                 instagram
               </a>
             </li>
             <li>
-              <a rel="noopener noreferrer" href="https://www.linkedin.com/company/techinoid/mycompany/">
+              <a rel="noopener noreferrer" onClick={reloadLinkdln}>
                 Linked in
               </a>
             </li>
