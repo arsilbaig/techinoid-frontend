@@ -73,7 +73,7 @@ function Footer() {
                   <li>
                     <Link
                       onClick={scrollTop}
-                      to={`${process.env.PUBLIC_URL}/service-details`}
+                      to={`${process.env.PUBLIC_URL}/service`}
                     >
                       Web Development
                     </Link>
@@ -81,7 +81,7 @@ function Footer() {
                   <li>
                     <Link
                       onClick={scrollTop}
-                      to={`${process.env.PUBLIC_URL}/service-details`}
+                      to={`${process.env.PUBLIC_URL}/service`}
                     >
                       Mobile App Development
                     </Link>
@@ -97,7 +97,7 @@ function Footer() {
                   <li>
                     <Link
                       onClick={scrollTop}
-                      to={`${process.env.PUBLIC_URL}/service-details`}
+                      to={`${process.env.PUBLIC_URL}/service`}
                     >
                      Cyber Security
                     </Link>
@@ -105,7 +105,7 @@ function Footer() {
                   <li>
                     <Link
                       onClick={scrollTop}
-                      to={`${process.env.PUBLIC_URL}/service-details`}
+                      to={`${process.env.PUBLIC_URL}/service`}
                     >
                       Artificial Intelligence
                     </Link>
