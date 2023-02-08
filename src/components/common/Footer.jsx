@@ -31,13 +31,13 @@ function Footer() {
                   <li>
                     <a
                       rel="noopener noreferrer"
-                      href="https://www.facebook.com/"
+                      href="https://www.facebook.com/techinoidpk?mibextid=LQQJ4d"
                       target="_blank"
                     >
                       <i className="fab fa-facebook-f" />
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       rel="noopener noreferrer"
                       href="https://www.twitter.com/"
@@ -45,12 +45,12 @@ function Footer() {
                     >
                       <i className="fab fa-twitter" />
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       rel="noopener noreferrer"
                       target="_blank"
-                      href="https://www.instagram.com/"
+                      href="https://instagram.com/techinoid?igshid=Zjc2ZTc4Nzk="
                     >
                       <i className="fab fa-instagram" />
                     </a>

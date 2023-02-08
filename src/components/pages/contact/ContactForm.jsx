@@ -34,9 +34,6 @@ function ContactForm() {
           autoClose: 5000
         })
         frm.reset()
-        // setTimeout(function () {
-        //   window.location.reload();
-        // }, 5000);
 
       })
       .catch(error => {
