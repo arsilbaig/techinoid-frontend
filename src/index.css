@@ -189,3 +189,7 @@
   align-items: center;
   height: 350px;
 }
+
+.Toastify__toast-container {
+  padding-top: "64px";
+}
