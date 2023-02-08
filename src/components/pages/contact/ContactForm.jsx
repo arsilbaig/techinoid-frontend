@@ -25,6 +25,7 @@ function ContactForm() {
   }
 
   const onSubmit = async () => {
+    var frm = document.getElementsByName('contact-form')[0];
     console.log(userData)
     await axios.post(`${process.env.REACT_APP_API_BASE_URL}/contact/create`, userData)
       .then(response => {
@@ -32,9 +33,11 @@ function ContactForm() {
           position: toast.POSITION.TOP_RIGHT,
           autoClose: 5000
         })
-        setTimeout(function () {
-          window.location.reload();
-        }, 5000);
+        frm.reset()
+        // setTimeout(function () {
+        //   window.location.reload();
+        // }, 5000);
+
       })
       .catch(error => {
         toast.error(error.message, {
@@ -42,10 +45,6 @@ function ContactForm() {
           autoClose: 5000
         })
       })
-
-
-
-
   }
   useEffect(() => {
     setTimeout(() => {
@@ -61,7 +60,7 @@ function ContactForm() {
             <div className="col-lg-6 col-xl-6">
               <div className="contact-form">
                 <h3>Have Any Questions</h3>
-                <form>
+                <form name="contact-form">
                   <div className="row">
                     <div className="col-12">
                       <input

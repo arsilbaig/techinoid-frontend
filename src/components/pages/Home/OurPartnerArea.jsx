@@ -21,15 +21,14 @@ function OurPartnerArea() {
   }
 
   const onSubmit = async () => {
+    var frm = document.getElementsByName('email-form')[0];
     await axios.post(`${process.env.REACT_APP_API_BASE_URL}/connect/create`, getInTouch)
       .then(response => {
         toast.success("Connected", {
           position: toast.POSITION.TOP_RIGHT,
           autoClose: 5000
         })
-        setTimeout(function () {
-          window.location.reload();
-        }, 5000);
+        frm.reset()
       })
       .catch(error => {
         toast.error(error.message, {
@@ -39,7 +38,7 @@ function OurPartnerArea() {
 
       })
 
-
+   
   }
 
 
@@ -61,6 +60,7 @@ function OurPartnerArea() {
                       onSubmit={(e) => e.preventDefault()}
                       action="#"
                       method="post"
+                      name="email-form"
                     >
                       <input
                         type="email"
