@@ -83,7 +83,7 @@ function Footer() {
                       onClick={scrollTop}
                       to={`${process.env.PUBLIC_URL}/service-details`}
                     >
-                      Web Solution
+                      Mobile App Development
                     </Link>
                   </li>
                   {/* <li>
@@ -99,7 +99,7 @@ function Footer() {
                       onClick={scrollTop}
                       to={`${process.env.PUBLIC_URL}/service-details`}
                     >
-                      App Design
+                     Cyber Security
                     </Link>
                   </li>
                   <li>
@@ -107,7 +107,7 @@ function Footer() {
                       onClick={scrollTop}
                       to={`${process.env.PUBLIC_URL}/service-details`}
                     >
-                      App Development
+                      Artificial Intelligence
                     </Link>
                   </li>
                 </ul>

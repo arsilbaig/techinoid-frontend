@@ -308,7 +308,7 @@ function WhatWeDoArea() {
                   </i>
                 </div>
                 <div className="service-content">
-                  <h4>ARTIFICIAL INTERLLIGENCE</h4>
+                  <h4>ARTIFICIAL INTELLIGENCE</h4>
                   <p>
                   our clients are offered Ai services that combine cloud computing.
                   </p>
