@@ -17,7 +17,6 @@ function InsideStoryArea() {
     <>
       <section className="about-area sec-mar dark">
         <div className="container">
-          <div className="out-story">
             <div className="row">
               <div className="col-lg-6 col-xl-6">
                 <div className="story-left">
@@ -101,7 +100,6 @@ function InsideStoryArea() {
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
     </>
