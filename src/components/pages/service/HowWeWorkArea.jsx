@@ -24,13 +24,15 @@ function HowWeWorkArea() {
   };
   return (
     <>
-      <section className="how-we-work sec-mar-top">
+      <section className="how-we-work sec-mar dark">
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-xl-4">
               <div className="title black">
                 <span>How We Work</span>
-                <h2>Our Unique Work Process.</h2>
+                <h2 style={{
+                  color: 'white'
+                }}>Our Unique Work Process.</h2>
               </div>
             </div>
           </div>

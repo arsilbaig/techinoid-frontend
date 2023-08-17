@@ -15,16 +15,18 @@ function AboutArea() {
   const singleXmPercentage = 68;
   return (
     <>
-      <section className="about-area sec-mar">
+      <section className="about-area sec-mar dark">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-xl-6">
               <div className="about-left">
-                <div className="title black">
+                <div className="title">
                   <span>About us</span>
                   <h2 className="mb-15">Direction with our company.</h2>
                 </div>
-                <p>
+                <p style={{
+                  color: 'white'
+                }}>
                   Focus on providing quality software products or services that meet the needs and wants of your target customers.Build and maintain a strong, professional, and efficient team of software developers, designers, and support staff.
                 </p>
                 <div className="our-mission">
@@ -39,17 +41,21 @@ function AboutArea() {
                       />
                     </i>
                   </div>
-                  <div style={{ display: "flex", flexDirection: "column" }}>
+                  <div style={{ display: "flex", flexDirection: "column", color: 'white' }}>
                     <div className="msn-content">
-                      <h5>Our Mission</h5>
-                      <p>
-                      Create innovative software solutions that simplify and improve the lives of our customers.
+                      <h5 >Our Mission</h5>
+                      <p style={{
+                        color: 'white'
+                      }}>
+                        Create innovative software solutions that simplify and improve the lives of our customers.
                       </p>
                     </div>
                     <div className="msn-content" style={{ paddingTop: 20 }}>
                       <h5>Our Vision</h5>
-                      <p>
-                      Our vision is to create innovative technology solutions that simplify and improve people's lives.
+                      <p style={{
+                        color: 'white'
+                      }}>
+                        Our vision is to create innovative technology solutions that simplify and improve people's lives.
                       </p>
                     </div>
                   </div>

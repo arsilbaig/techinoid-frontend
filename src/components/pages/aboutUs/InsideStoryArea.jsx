@@ -15,7 +15,7 @@ function InsideStoryArea() {
   };
   return (
     <>
-      <section className="about-area sec-mar">
+      <section className="about-area sec-mar dark">
         <div className="container">
           <div className="out-story">
             <div className="row">
@@ -48,13 +48,15 @@ function InsideStoryArea() {
               </div>
               <div className="col-lg-6 col-xl-6">
                 <div className="story-right">
-                  <div className="title black">
+                  <div className="title">
                     <span>Inside Story</span>
                     <h2 className="mb-15">
                       We are software agency responsible to provide best solutions.
                     </h2>
                   </div>
-                  <p>
+                  <p style={{
+                    color: 'white'
+                  }}>
                     Techinoid is your one-stop technology solution for all the conventional and modern day challenges. We are a bunch of tech-savvy geeks aimed at re-designing your life and more importantly, the way you conduct business. We strive to craft innovative digital solutions that alter the way people and organisations function and interact with each other and their environment. We earn your trust day-by-day “everyday” by doing that little bit extra than what others have to offer. Below are a few reasons that differentiates us from others.
                   </p>
                   {/* <div className="story-skills">

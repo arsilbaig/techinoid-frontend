@@ -50,7 +50,7 @@ function BlogPage() {
       <Breadcrumb pageName="Blog" />
      {isLoading ? <LoadingSpinner/> :
     
-      <div className="blog-news sec-mar">
+      <div className="blog-news sec-mar dark">
         <div className="container">
           <div className="blog-wrapper">
             <div className="row">

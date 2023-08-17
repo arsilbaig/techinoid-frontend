@@ -56,11 +56,14 @@ function ContactForm() {
           <div className="row">
             <div className="col-lg-6 col-xl-6">
               <div className="contact-form">
-                <h3>Have Any Questions</h3>
+                <h3 style={{
+                color: 'white'
+              }}>Have Any Questions</h3>
                 <form name="contact-form">
                   <div className="row">
                     <div className="col-12">
                       <input
+                      
                         type="text"
                         name="name"
                         placeholder="Enter your name"

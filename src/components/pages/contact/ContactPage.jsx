@@ -7,7 +7,7 @@ function ContactPage() {
   return (
     <>
       <Breadcrumb pageName="Contact Us" />
-      <div className="contact-area sec-mar">
+      <div className="contact-area sec-mar dark">
         <ContactUsArea />
         <ContactForm />
       </div>
