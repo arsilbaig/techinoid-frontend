@@ -5169,7 +5169,7 @@ footer {
 
 .google-map {
   position: absolute;
-  right: 0;
+  right: 111px;
   top: 0;
 }
 
@@ -5180,7 +5180,7 @@ footer {
 }
 
 .google-map iframe {
-  width: 850px;
+  width: 700px;
   height: 570px;
 }
 
