@@ -2469,7 +2469,9 @@ header {
 .single-portfolio .portfolio-data a img {
   border-radius: 10px;
   width: 100%;
-  max-height: 500px;
+  height: 400px;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 .single-portfolio .portfolio-data:before {

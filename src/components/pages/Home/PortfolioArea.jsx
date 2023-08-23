@@ -85,15 +85,15 @@ function PortfolioArea(props) {
                       <img
                         src={
                           process.env.PUBLIC_URL +
-                          "/images/portfolio/portfolio-1.jpg"
+                          "/images/Logistic.jpg"
                         }
                         alt="images"
                       />
                     </a>
                   </div>
                   <div className="portfolio-inner">
-                    <span>Template</span>
-                    <h4>Creative Agency</h4>
+                    <span>Logistics Plus(LP)</span>
+                    <h4>Logistic/Courier management system</h4>
 
                     <div className="portfolio-hover">
                       <Link
@@ -130,15 +130,15 @@ function PortfolioArea(props) {
                       <img
                         src={
                           process.env.PUBLIC_URL +
-                          "/images/portfolio/portfolio-2.jpg"
+                          "/images/reporting.jpg"
                         }
                         alt="images"
                       />
                     </a>
                   </div>
                   <div className="portfolio-inner">
-                    <span>UI Kit</span>
-                    <h4>E-Shop Ecommerce</h4>
+                    <span>Smart Sensing</span>
+                    <h4>Dynamic Reporting System</h4>
                     <div className="portfolio-hover">
                       <Link
                         onClick={scrollTop}
@@ -173,15 +173,15 @@ function PortfolioArea(props) {
                       <img
                         src={
                           process.env.PUBLIC_URL +
-                          "/images/portfolio/portfolio-3.jpg"
+                          "/images/mediclinnic-app.jpg"
                         }
                         alt="images"
                       />
                     </a>
                   </div>
                   <div className="portfolio-inner">
-                    <span>Software</span>
-                    <h4>Desktop Mockup</h4>
+                    <span>MediClinic App</span>
+                    <h4>EHR/EMR System under HIPAA Compliance</h4>
                     <div className="portfolio-hover">
                       <Link
                         onClick={scrollTop}
@@ -194,7 +194,7 @@ function PortfolioArea(props) {
                         data-lightbox="image1"
                         href={
                           process.env.PUBLIC_URL +
-                          "/images/portfolio/portfolio-3.jpg"
+                          "/images/dentist.jpg"
                         }
                       >
                         <img
@@ -216,15 +216,15 @@ function PortfolioArea(props) {
                       <img
                         src={
                           process.env.PUBLIC_URL +
-                          "/images/portfolio/portfolio-4.jpg"
+                          "/images/dentist.jpg"
                         }
                         alt="images"
                       />
                     </a>
                   </div>
                   <div className="portfolio-inner">
-                    <span>Graphic</span>
-                    <h4>Art Deco Cocktails</h4>
+                    <span>DentoCenter</span>
+                    <h4>Dental Practice Management System</h4>
                     <div className="portfolio-hover">
                       <Link
                         onClick={scrollTop}
@@ -237,7 +237,7 @@ function PortfolioArea(props) {
                         data-lightbox="image1"
                         href={
                           process.env.PUBLIC_URL +
-                          "/images/portfolio/portfolio-4.jpg"
+                          "/images/dentist.jpg"
                         }
                       >
                         <img
@@ -258,30 +258,30 @@ function PortfolioArea(props) {
                     <a href="#s">
                       <img
                         src={
+                          process.env.PUBLIC_URL +
+                          "/images/online-exams.jpg"
+                        }
+                        alt="images"
+                      />
+                    </a>
+                  </div>
+                  <div className="portfolio-inner">
+                    <span>Kangaro Exam System</span>
+                    <h4>Online Exam System</h4>
+                    <div className="portfolio-hover">
+                      <Link
+                        onClick={scrollTop}
+                        to={`${process.env.PUBLIC_URL}/project-details`}
+                        className="case-btn"
+                      >
+                        Case Study
+                      </Link>
+                      <a
+                        data-lightbox="image1"
+                        href={
                           process.env.PUBLIC_URL +
                           "/images/portfolio/portfolio-5.jpg"
                         }
-                        alt="images"
-                      />
-                    </a>
-                  </div>
-                  <div className="portfolio-inner">
-                    <span>App</span>
-                    <h4>Mobile Crypto Wallet</h4>
-                    <div className="portfolio-hover">
-                      <Link
-                        onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/project-details`}
-                        className="case-btn"
-                      >
-                        Case Study
-                      </Link>
-                      <a
-                        data-lightbox="image1"
-                        href={
-                          process.env.PUBLIC_URL +
-                          "/images/portfolio/portfolio-5.jpg"
-                        }
                       >
                         <img
                           alt="images"
@@ -302,15 +302,15 @@ function PortfolioArea(props) {
                       <img
                         src={
                           process.env.PUBLIC_URL +
-                          "/images/portfolio/portfolio-3.jpg"
+                          "/images/health-care.jpg"
                         }
                         alt="images"
                       />
                     </a>
                   </div>
                   <div className="portfolio-inner">
-                    <span>Template</span>
-                    <h4>Creative Agency</h4>
+                    <span>Telemedicols</span>
+                    <h4>HealthCare App Selling Marketplace</h4>
                     <div className="portfolio-hover">
                       <Link
                         onClick={scrollTop}

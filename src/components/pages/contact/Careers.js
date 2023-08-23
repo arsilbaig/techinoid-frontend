@@ -35,8 +35,10 @@ export default function Careers() {
             {isLoading ? <LoadingSpinner />
                 :
                 <div>
-                    <div style={{ display: "flex", fontSize: 42, fontWeight: 600, justifyContent: "center", alignItems: "center", paddingBottom: 50, paddingTop: 50 }}>
-                        <h1>
+                    <div style={{ display: "flex", fontSize: 42, fontWeight: 600, justifyContent: "center", alignItems: "center", paddingBottom: 50, paddingTop: 50 }} className='dark'>
+                        <h1 style={{
+                            color: 'white'
+                        }}>
                             Current Openings
                         </h1>
                     </div>

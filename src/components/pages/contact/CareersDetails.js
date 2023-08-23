@@ -1,8 +1,6 @@
 import { Typography } from '@mui/material'
 import React, { useState, useEffect } from 'react'
 import Breadcrumb from '../../common/Breadcrumb'
-import BlurOnIcon from '@mui/icons-material/BlurOn';
-import InputAdornment from '@mui/material/InputAdornment';
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { useParams } from 'react-router-dom';
@@ -18,7 +16,6 @@ export default function CareersDetails() {
     const getJobDetailsById = async () => {
         setIsLoading(true);
         await axios.get(`${process.env.REACT_APP_API_BASE_URL}/jobPost/${params.userId}`).then((response) => {
-
             setTimeout(() => {
                 setJobDetails(response.data);
                 setIsLoading(false);
@@ -42,7 +39,13 @@ export default function CareersDetails() {
                     <div style={{ paddingTop: 32, paddingLeft: 100, paddingRight: 50, paddingBottom: 32 }}>
                         <div className='flex justify-start flex-col space-y-4'>
                             <h1 style={{ fontWeight: 600, fontSize: 42 }}>  {jobDetails?.jobPosts?.title}</h1>
-                            <Typography>{jobDetails?.jobPosts?.job_category} |  {jobDetails?.jobPosts?.location} |{new Date(jobDetails?.jobPosts?.apply_before).toLocaleDateString()} | {jobDetails?.jobPosts?.department} |  {jobDetails?.jobPosts?.job_type}</Typography>
+                            <Typography>
+                                {jobDetails?.jobPosts?.job_category} |
+                                {jobDetails?.jobPosts?.location} |
+                                {new Date(jobDetails?.jobPosts?.apply_before).toLocaleDateString()} |
+                                {jobDetails?.jobPosts?.department} |
+                                {jobDetails?.jobPosts?.job_type}
+                            </Typography>
                         </div>
 
                         <div className="pt-10" style={{ fontSize: 20, fontWeight: 500 }}>
@@ -65,9 +68,6 @@ export default function CareersDetails() {
                                
                             </ul> */}
                             <div dangerouslySetInnerHTML={{ __html: jobDetails?.jobPosts?.requirements }}></div>
-
-
-
                         </div>
 
 
@@ -83,12 +83,16 @@ export default function CareersDetails() {
 
                         <div className='pt-4'>
                             <Link to={`/jobForm/${jobDetails?.jobPosts?.id}`}>
-                                <Button variant="contained" sx={{
-                                    padding: 2,
-                                    borderRadius: 10,
-                                    fontWeight: 500,
-                                    background: "linear-gradient(90deg, #D90A2C 1.05%, #730000 100%)"
-                                }}>Apply</Button>
+                                <Button
+                                    variant="contained"
+                                    sx={{
+                                        padding: 2,
+                                        borderRadius: 10,
+                                        fontWeight: 500,
+                                        background: "linear-gradient(90deg, #D90A2C 1.05%, #730000 100%)"
+                                    }}>
+                                    Apply
+                                </Button>
                             </Link>
                         </div>
 
@@ -113,8 +117,6 @@ export default function CareersDetails() {
 
                         </ul>
                     </div>
-
-
                 </div>
             }
 
