@@ -38,8 +38,8 @@ function WhyChooseUsArea(props) {
                 <div className="signle-bar pt-0">
                   <h6>Web Developement</h6>
                   <ProgressBar
-                    bgColor="#D90A2C"
-                    baseBgColor="#d90a2c80"
+                    bgColor="#00468e"
+                    baseBgColor="#00468e80"
                     height="5px"
                     completed={85}
                     labelAlignment="outside"
@@ -52,8 +52,8 @@ function WhyChooseUsArea(props) {
                   <h6>Blockchain Technology</h6>
                   <ProgressBar
                     // className="barsss"
-                    bgColor="#D90A2C"
-                    baseBgColor="#d90a2c80"
+                    bgColor="#00468e"
+                    baseBgColor="#00468e80"
                     height="5px"
                     completed={65}
                     labelClassName={`${props.lable}`}
@@ -67,8 +67,8 @@ function WhyChooseUsArea(props) {
                   <h6>Mobile App Development</h6>
                   <ProgressBar
                     // className="barsss"
-                    bgColor="#D90A2C"
-                    baseBgColor="#d90a2c80"
+                    bgColor="#00468e"
+                    baseBgColor="#00468e80"
                     height="5px"
                     completed={65}
                     labelClassName={`${props.lable}`}
@@ -83,8 +83,8 @@ function WhyChooseUsArea(props) {
                   <h6>Internet of Things</h6>
                   <ProgressBar
                     // className="barsss"
-                    bgColor="#D90A2C"
-                    baseBgColor="#d90a2c80"
+                    bgColor="#00468e"
+                    baseBgColor="#00468e80"
                     height="5px"
                     completed={65}
                     labelClassName={`${props.lable}`}

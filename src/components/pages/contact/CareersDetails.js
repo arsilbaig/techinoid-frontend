@@ -89,7 +89,7 @@ export default function CareersDetails() {
                                         padding: 2,
                                         borderRadius: 10,
                                         fontWeight: 500,
-                                        background: "linear-gradient(90deg, #D90A2C 1.05%, #730000 100%)"
+                                        background: "linear-gradient(90deg,  #00468e 1%, #333333 150%)"
                                     }}>
                                     Apply
                                 </Button>

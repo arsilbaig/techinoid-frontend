@@ -3,7 +3,7 @@
 ===========================*/
 .hero-area {
     position: relative;
-    background-image: url(../../../public/images/hero-bg.png);
+    background: black;
     background-size: cover;
     background-position: center center;
     height: 100%;
@@ -143,7 +143,7 @@
 }
 
 .hero-content {
-    background: linear-gradient(233.77deg, rgba(217, 10, 44, 0.8) 0.94%, rgba(115, 0, 0, 0.8) 99.09%);
+    background: linear-gradient(90deg, rgba(0,70,142,1) 0%, rgba(51,51,51,1) 150%);
     border: 1px solid rgba(173, 173, 173, 0.2);
     box-sizing: border-box;
     border-radius: 20px;
@@ -484,7 +484,7 @@
                 display: inline-block;
                 line-height: 1;
                 padding: 0 15px;
-                border-right: 1px solid #D90A2C;
+                border-right: 1px solid #00468e;
                 @include transition(.5s);
 
                 @media #{$xs} {

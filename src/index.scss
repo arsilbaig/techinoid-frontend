@@ -14,12 +14,12 @@
     stroke-linecap: round;
   }
   .CircularProgressbar-path {
-    stroke: #d90a2c;
+    stroke: #00468e;
     stroke-linecap: round;
     transition: stroke-dashoffset 0.5s ease 0s;
   }
   .CircularProgressbar-text {
-    fill: #d90a2c;
+    fill: #00468e;
     font-size: 22px;
     font-weight: 700;
   }
@@ -110,7 +110,7 @@
 }
 
 .head-hover .cursor-dot {
-  background-color: purple;
+  background-color: #00468e;
   width: 20px;
   height: 20px;
 }
@@ -146,6 +146,6 @@
   display: none !important;
 }
 .scroll-top.opacity{
-  color: #D90A2C;
+  color: #00468e;
   font-weight: 800;
 }

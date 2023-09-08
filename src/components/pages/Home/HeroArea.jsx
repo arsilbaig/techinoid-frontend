@@ -82,20 +82,6 @@ function HeroArea() {
                           <p>
                           Cryptocurrency is a digital payment system that doesn't rely on banks to verify transactions. It’s a peer-to-peer system that can enable anyone anywhere to send and receive payments. Instead of being physical money carried around and exchanged in the real world.
                           </p>
-                          {/* <Link
-                            onClick={scrollTop}
-                            to={`${process.env.PUBLIC_URL}/about`}
-                            className="about-btn"
-                          >
-                            About us
-                          </Link>
-                          <Link
-                            onClick={scrollTop}
-                            to={`${process.env.PUBLIC_URL}/project-details`}
-                            className="work-btn"
-                          >
-                            How we work
-                          </Link> */}
                           <div className="slider-num">
                             <span>01</span>
                           </div>
@@ -132,20 +118,6 @@ function HeroArea() {
                            healthcare providers.Develop software that provides physicians and other 
                            healthcare providers with information and guidance to assist in making informed medical decisions
                           </p>
-                          {/* <Link
-                            onClick={scrollTop}
-                            to={`${process.env.PUBLIC_URL}/about`}
-                            className="about-btn"
-                          >
-                            About us
-                          </Link>
-                          <Link
-                            onClick={scrollTop}
-                            to={`${process.env.PUBLIC_URL}/project-details`}
-                            className="work-btn"
-                          >
-                            How we work
-                          </Link> */}
                           <div className="slider-num">
                             <span>02</span>
                           </div>
@@ -164,6 +136,7 @@ function HeroArea() {
                       <div className="hero-content-wrap">
                         <div className="hero-content-img">
                           <img
+                          style={{maxWidth:675}}
                             src={
                               process.env.PUBLIC_URL +
                               "/images/fianance.jpg"
